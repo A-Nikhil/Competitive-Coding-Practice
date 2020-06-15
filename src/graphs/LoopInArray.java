@@ -1,8 +1,18 @@
+/*
+Check loop in array according to given constraints
+Given an array arr[0..n-1] of positive and negative numbers we need to find if there is
+a cycle in array with given rules of movements. If a number at an i index is positive,
+then move arr[i]%n forward steps, i.e., next index to visit is (i + arr[i])%n.
+Conversely, if it’s negative, move backward arr[i]%n steps i.e., next index to visit is (i – arr[i])%n.
+Here n is size of array. If value of arr[i]%n is zero, then it means no move from index i.
+
+https://www.geeksforgeeks.org/check-loop-array-according-given-constraints/
+ */
 package graphs;
 
 public class LoopInArray {
 	public static void main(String[] args) {
-		int[] arr = { 2, -1, 1, 2, 2 };
+		int[] arr = {1,1,1,1,1};
 		int n = arr.length;
 		System.out.println(checkForLoops(arr, n));
 	}
@@ -28,8 +38,11 @@ public class LoopInArray {
 		} else {
 			next = ((current + arr[current] + n) % n);
 		}
-		if (next == 0 || recursive[next]) {
+		if (next == current) {
 			return false;
+		}
+		if (recursive[next]) {
+			return true;
 		}
 		if (!visited[next]) {
 			if (LoopRecursive(arr, n, next, visited, recursive)) {
