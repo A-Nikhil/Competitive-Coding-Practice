@@ -46,10 +46,10 @@ public class MinimumSumOfConnectedComponents {
 //		graphMatrix.addEdge(7, 8, false);
 //		graphMatrix.addEdge(9, 10, false);
 
-		GraphMatrix graphMatrix = new GraphMatrix(10, false);
+		GraphMatrix graphMatrix = new GraphMatrix(10, false, false);
 		int[] values = {2, 5, 3, 4, 8};
-		graphMatrix.addEdge(1, 4, false);
-		graphMatrix.addEdge(4, 5, false);
+		graphMatrix.addEdge(1, 4);
+		graphMatrix.addEdge(4, 5);
 		System.out.println(getSum(graphMatrix.getGraph(), values.length, values));
 	}
 }
