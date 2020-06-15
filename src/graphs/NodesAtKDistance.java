@@ -15,8 +15,9 @@ import java.util.Queue;
 
 public class NodesAtKDistance {
 	private static int[] dl, dr;
+
 	public static void main(String[] args) {
-		GraphMatrix graphMatrix = new GraphMatrix(10, false);
+		GraphMatrix graphMatrix = new GraphMatrix(10, false, true);
 		int[][] edges =
 				{
 						{1, 0}, {0, 3}, {0, 8}, {2, 3},
@@ -24,7 +25,7 @@ public class NodesAtKDistance {
 						{5, 9}
 				};
 		for (int[] temp : edges) {
-			graphMatrix.addEdge(temp[0], temp[1], true);
+			graphMatrix.addEdge(temp[0], temp[1]);
 		}
 		int[][] graph = graphMatrix.getGraph();
 		int[] marked = {1, 2, 4};

@@ -7,14 +7,16 @@ package graphs;
 class GraphMatrix {
 	private final int[][] graph;
 	private final boolean isDirected;
+	private final boolean isZeroIndexed;
 
-	GraphMatrix(int V, boolean isDirected) {
+	GraphMatrix(int V, boolean isDirected, boolean isZeroIndexed) {
 		graph = new int[V][V];
 		this.isDirected = isDirected;
+		this.isZeroIndexed = isZeroIndexed;
 	}
 
-	void addEdge(int source, int destination, boolean zeroIndexing) {
-		if (!zeroIndexing) {
+	void addEdge(int source, int destination) {
+		if (!isZeroIndexed) {
 			source--;
 			destination--;
 		}
