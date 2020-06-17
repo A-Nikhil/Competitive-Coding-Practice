@@ -3,6 +3,7 @@ package graphs.spanningTrees;
 import java.util.Arrays;
 import java.util.HashSet;
 
+@SuppressWarnings("Duplicates")
 public class PrimsSpanningTree {
 	public static void main(String[] args) {
 		int[][] graph = {
@@ -37,15 +38,16 @@ public class PrimsSpanningTree {
 	}
 
 	private static int findMinimum(int[] distances, HashSet<Integer> mstSet, int V) {
-		int small = Integer.MAX_VALUE;
+		int small = Integer.MAX_VALUE, pos = 0;
 		for (int i = 0; i < V; i++) {
 			if (!mstSet.contains(i)) {
 				if (distances[i] < small) {
 					small = distances[i];
+					pos = i;
 				}
 			}
 		}
-		return small;
+		return pos;
 	}
 
 	private static void printMST(int[][] graph, int V, int[] parent) {
