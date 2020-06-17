@@ -13,7 +13,7 @@ Constraints:
 https://www.geeksforgeeks.org/minimum-number-operation-required-convert-number-x-y/
 */
 
-package graphs;
+package graphs.traversals;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

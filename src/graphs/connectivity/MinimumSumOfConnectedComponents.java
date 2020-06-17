@@ -10,7 +10,9 @@ https://www.geeksforgeeks.org/sum-of-the-minimum-elements-in-all-connected-compo
 */
 
 
-package graphs;
+package graphs.connectivity;
+
+import graphs.GraphMatrix;
 
 public class MinimumSumOfConnectedComponents {
 	private static void DFS(int[][] graph, int V, int[] values,

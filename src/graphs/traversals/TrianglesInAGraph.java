@@ -2,7 +2,7 @@
 This program calculates the number of triangles in a graph
  */
 
-package graphs;
+package graphs.traversals;
 
 public class TrianglesInAGraph {
 	public static void main(String[] args) {

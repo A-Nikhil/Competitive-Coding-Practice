@@ -8,7 +8,7 @@ Here n is size of array. If value of arr[i]%n is zero, then it means no move fro
 
 https://www.geeksforgeeks.org/check-loop-array-according-given-constraints/
  */
-package graphs;
+package graphs.traversals;
 
 public class LoopInArray {
 	public static void main(String[] args) {

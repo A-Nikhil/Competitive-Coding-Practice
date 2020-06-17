@@ -2,7 +2,7 @@
 Given a tree and 2 vertices, this program finds out if both the vertices lie on the same path of the tree
  */
 
-package graphs;
+package graphs.traversals;
 
 public class SamePath {
 	private int[] inTime;

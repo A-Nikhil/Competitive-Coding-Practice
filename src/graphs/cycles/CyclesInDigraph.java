@@ -1,4 +1,4 @@
-package graphs;
+package graphs.cycles;
 
 public class CyclesInDigraph {
 	private static boolean cyclic(int[][] graph, int v, boolean[] recursion,

@@ -9,7 +9,7 @@ The input contains values of m, n, k, r and two array of integers X and Y, each 
 https://www.geeksforgeeks.org/path-rectangle-containing-circles/
  */
 
-package graphs;
+package graphs.cycles;
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -13,7 +13,9 @@ For each test case in a new line output will be an integer denoting minimum umbe
 required to sort the array.
  */
 
-package graphs;
+package graphs.traversals;
+
+import graphs.GraphList;
 
 import java.util.ArrayList;
 import java.util.Arrays;

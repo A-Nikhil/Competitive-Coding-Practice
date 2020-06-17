@@ -15,7 +15,9 @@ Following is detailed Kosaraju’s algorithm.
 		The DFS starting from v prints strongly connected component of v.
 		In the above example, we process vertices in order 0, 3, 4, 2, 1 (One by one popped from stack).
  */
-package graphs;
+package graphs.connectivity;
+
+import graphs.GraphMatrix;
 
 import java.util.Stack;
 

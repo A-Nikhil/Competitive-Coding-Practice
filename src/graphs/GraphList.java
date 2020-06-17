@@ -8,16 +8,16 @@ public class GraphList {
 	private final boolean isDirected;
 	private final boolean isZeroIndexed;
 
-	GraphList(int V, boolean isDirected, boolean isZeroIndexed) {
+	public GraphList(int V, boolean isDirected, boolean isZeroIndexed) {
 		this.graph = new ArrayList[V];
-		for (int i=0; i<V; i++) {
+		for (int i = 0; i < V; i++) {
 			this.graph[i] = new ArrayList<>();
 		}
 		this.isDirected = isDirected;
 		this.isZeroIndexed = isZeroIndexed;
 	}
 
-	void addEdge(int source, int destination) {
+	public void addEdge(int source, int destination) {
 		if (!isZeroIndexed) {
 			source--;
 			destination--;

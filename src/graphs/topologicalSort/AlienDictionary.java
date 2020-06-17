@@ -25,7 +25,7 @@ Approach =>
 
 https://www.geeksforgeeks.org/given-sorted-dictionary-find-precedence-characters/
  */
-package graphs;
+package graphs.topologicalSort;
 
 import java.util.Stack;
 

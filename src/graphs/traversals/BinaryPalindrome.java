@@ -5,7 +5,7 @@ The palindrome must always begin with 1 and contains maximum number of zeros.
 https://www.geeksforgeeks.org/construct-binary-palindrome-by-repeated-appending-and-trimming/
  */
 
-package graphs;
+package graphs.traversals;
 
 import java.util.ArrayList;
 

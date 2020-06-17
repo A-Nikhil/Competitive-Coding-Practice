@@ -46,7 +46,7 @@ Note that we can always use BFS to find shortest path if graph is unweighted.
 https://practice.geeksforgeeks.org/problems/shortest-source-to-destination-path/
  */
 
-package graphs;
+package graphs.cycles;
 
 import java.util.LinkedList;
 import java.util.Queue;

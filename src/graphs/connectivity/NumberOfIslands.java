@@ -12,7 +12,7 @@ Input : mat[][] = {{1, 1, 0, 0, 0},
 Output : 5
  */
 
-package graphs;
+package graphs.connectivity;
 
 public class NumberOfIslands {
 	private static void DFSUtil(int[][] matrix, int m, int n,

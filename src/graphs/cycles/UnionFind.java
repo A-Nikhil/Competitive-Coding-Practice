@@ -1,4 +1,4 @@
-package graphs;
+package graphs.cycles;
 
 import java.util.Arrays;
 

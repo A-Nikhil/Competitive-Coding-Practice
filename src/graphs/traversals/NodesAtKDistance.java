@@ -7,7 +7,9 @@ that means every node whose distance from all marked nodes is less than K, shoul
 https://www.geeksforgeeks.org/count-nodes-within-k-distance-from-all-nodes-in-a-set/
  */
 
-package graphs;
+package graphs.traversals;
+
+import graphs.GraphMatrix;
 
 import java.util.Arrays;
 import java.util.LinkedList;

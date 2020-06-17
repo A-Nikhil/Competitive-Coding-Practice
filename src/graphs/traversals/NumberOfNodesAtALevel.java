@@ -1,4 +1,4 @@
-package graphs;
+package graphs.traversals;
 
 import java.util.LinkedList;
 import java.util.Queue;

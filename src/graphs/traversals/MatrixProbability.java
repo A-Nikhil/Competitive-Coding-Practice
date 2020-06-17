@@ -1,4 +1,4 @@
-package graphs;
+package graphs.traversals;
 
 public class MatrixProbability {
 	private static double DFS(int m, int n, int x, int y, int steps) {

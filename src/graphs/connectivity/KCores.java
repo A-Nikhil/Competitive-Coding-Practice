@@ -1,7 +1,7 @@
 /*
 https://www.geeksforgeeks.org/find-k-cores-graph/
  */
-package graphs;
+package graphs.connectivity;
 
 import java.util.Arrays;
 

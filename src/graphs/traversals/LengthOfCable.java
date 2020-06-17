@@ -16,7 +16,9 @@ Output: maximum length of cable = 12
 
 https://www.geeksforgeeks.org/longest-path-between-any-pair-of-vertices/
  */
-package graphs;
+package graphs.traversals;
+
+import graphs.GraphMatrix;
 
 import java.util.Arrays;
 import java.util.Stack;

@@ -5,7 +5,7 @@ The following approach does the following by performing a DFS and noting the las
 performed and checked whether all vertices are visited or not.
  */
 
-package graphs;
+package graphs.connectivity;
 
 import java.util.Arrays;
 

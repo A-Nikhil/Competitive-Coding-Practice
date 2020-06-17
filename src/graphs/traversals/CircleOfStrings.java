@@ -11,7 +11,9 @@ the answer will be Yes as the given strings can be chained as "for", "rig", "gee
 https://www.geeksforgeeks.org/find-array-strings-can-chained-form-circle-set-2/
  */
 
-package graphs;
+package graphs.traversals;
+
+import graphs.GraphList;
 
 import java.util.ArrayList;
 

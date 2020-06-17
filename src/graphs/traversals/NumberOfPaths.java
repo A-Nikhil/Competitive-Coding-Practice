@@ -2,7 +2,7 @@
 Given a graph, a source vertex and a destination vertex, find the number of paths
 https://www.geeksforgeeks.org/count-possible-paths-two-vertices/
  */
-package graphs;
+package graphs.traversals;
 
 public class NumberOfPaths {
 	private static int counter = 0;
