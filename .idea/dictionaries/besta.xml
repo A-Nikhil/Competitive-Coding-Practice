@@ -2,6 +2,7 @@
   <dictionary name="besta">
     <words>
       <w>kosaraju</w>
+      <w>postorder</w>
       <w>prims</w>
       <w>warshall</w>
     </words>
