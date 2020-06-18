@@ -26,6 +26,17 @@ public class GraphMatrix {
 		}
 	}
 
+	public void addEdge(int source, int destination, int weight) {
+		if (!isZeroIndexed) {
+			source--;
+			destination--;
+		}
+		this.graph[source][destination] = weight;
+		if (!isDirected) {
+			this.graph[destination][source] = weight;
+		}
+	}
+
 	public int[][] getGraph() {
 		return this.graph;
 	}

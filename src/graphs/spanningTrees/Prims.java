@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 @SuppressWarnings("Duplicates")
-public class PrimsSpanningTree {
+public class Prims {
 	public static void main(String[] args) {
 		int[][] graph = {
 				{0, 2, 0, 6, 0},
