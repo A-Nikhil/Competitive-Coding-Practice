@@ -21,6 +21,7 @@ package binaryTree.checkingAndPrinting;
 
 import binaryTree.Node;
 
+@SuppressWarnings("Duplicates")
 public class BinarySumTree {
 	private static boolean isLeaf(Node root) {
 		if (root == null) {
