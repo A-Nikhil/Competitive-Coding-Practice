@@ -32,5 +32,30 @@ Time complexity – O(n)
 
 package binaryTree.traversals;
 
+import binaryTree.Node;
+
+@SuppressWarnings("Duplicates")
 public class DiameterOfATree {
+	private static int ans;
+
+	private static int getHeight(Node root) {
+		if (root == null) {
+			return 0;
+		}
+
+		int left = getHeight(root.left);
+		int right = getHeight(root.right);
+		ans = Math.max(ans, left + right + 1);
+		return 1 + Math.max(left, right);
+	}
+
+	public static void main(String[] args) {
+		Node root = new Node(1);
+		root.left = new Node(2);
+		root.right = new Node(3);
+		root.left.left = new Node(4);
+		root.left.right = new Node(5);
+		getHeight(root);
+		System.out.println(ans);
+	}
 }
