@@ -22,6 +22,66 @@ https://www.geeksforgeeks.org/check-weather-given-binary-tree-perfect-not/
 
 package binaryTree.checkingAndPrinting;
 
-public class PerfectBinaryTree {
+import binaryTree.Node;
 
+@SuppressWarnings("Duplicates")
+public class PerfectBinaryTree {
+	private static int leftLeafLevel(Node root) {
+		if (root.left == null && root.right == null) {
+			return 0;
+		}
+		if (root.left != null) {
+			return 1 + leftLeafLevel(root.left);
+		} else {
+			return 0;
+		}
+	}
+
+	private static boolean checkLeaves(Node root, int leafLevel, int myLevel) {
+		if (root == null) {
+			return true;
+		}
+
+		if (isLeaf(root)) {
+			return myLevel == leafLevel;
+		} else {
+			return checkLeaves(root.left, leafLevel, myLevel + 1)
+					&& checkLeaves(root.right, leafLevel, myLevel + 1);
+		}
+	}
+
+	private static boolean checkInternalNodes(Node root) {
+		if (root == null || isLeaf(root)) {
+			return true;
+		}
+		if (root.left != null && root.right != null) {
+			return checkInternalNodes(root.left) && checkInternalNodes(root.right);
+		} else {
+			return false;
+		}
+	}
+
+	private static boolean isLeaf(Node root) {
+		return root.left == null && root.right == null;
+	}
+
+	private static boolean isPerfect(Node root) {
+		int leafLevel = leftLeafLevel(root);
+		return checkLeaves(root, leafLevel, 0)
+				&& checkInternalNodes(root);
+	}
+
+	public static void main(String[] args) {
+		Node root;
+		root = new Node(10);
+		root.left = new Node(20);
+		root.right = new Node(30);
+
+		root.left.left = new Node(40);
+		root.left.right = new Node(50);
+		root.right.left = new Node(60);
+		root.right.right = new Node(70);
+
+		System.out.println(isPerfect(root));
+	}
 }
