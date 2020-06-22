@@ -47,6 +47,7 @@ public class PairSumEqualToRoot {
 		return result;
 	}
 
+	@SuppressWarnings("Duplicates")
 	public static void main(String[] args) {
 		Node root = new Node(8);
 		root.left = new Node(5);
