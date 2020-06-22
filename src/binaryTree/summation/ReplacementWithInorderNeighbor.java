@@ -51,8 +51,8 @@ import binaryTree.Node;
 import commons.ArrayPrinter;
 
 public class ReplacementWithInorderNeighbor {
-	private static Integer[] arr;
-	private static int i = 0;
+	private static int[] arr;
+	private static int i;
 
 	private static void doInorder(Node root, boolean replace) {
 		if (root == null) {
@@ -78,16 +78,16 @@ public class ReplacementWithInorderNeighbor {
 		root.left.right = new Node(5); //   4   5  6   7
 		root.right.left = new Node(6);
 		root.right.right = new Node(7);
-		arr = new Integer[100];
+		arr = new int[100];
 		arr[0] = 0;
-		i = 1;
 		doInorder(root, false);
 		arr[i] = 0;
-		(new ArrayPrinter<Integer>()).printArray(arr, i);
+		(new ArrayPrinter()).printArray(arr, i);
+		System.out.println();
 		i = 1;
 		doInorder(root, true);
-		i = 0;
+		i = 1;
 		doInorder(root, false);
-		(new ArrayPrinter<Integer>()).printArray(arr, i);
+		(new ArrayPrinter()).printArray(arr, i);
 	}
 }
