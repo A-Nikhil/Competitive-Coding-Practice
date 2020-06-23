@@ -16,7 +16,7 @@ Output  1 4 5 6
 
 package binaryTree.checkingAndPrinting;
 
-import binaryTree.Node;
+import commons.Node;
 
 @SuppressWarnings("Duplicates")
 public class RootsAtOddLevel {

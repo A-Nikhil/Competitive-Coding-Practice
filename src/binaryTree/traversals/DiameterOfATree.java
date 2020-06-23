@@ -32,7 +32,7 @@ Time complexity – O(n)
 
 package binaryTree.traversals;
 
-import binaryTree.Node;
+import commons.Node;
 
 @SuppressWarnings("Duplicates")
 public class DiameterOfATree {

@@ -13,8 +13,8 @@ https://www.geeksforgeeks.org/subtree-given-sum-binary-tree/
 
 package binaryTree.summation;
 
-import binaryTree.GlobalVar;
-import binaryTree.Node;
+import commons.GlobalVar;
+import commons.Node;
 
 public class SubTreeWithGivenSum {
 	private static boolean check(Node root, GlobalVar currentSum, int x) {

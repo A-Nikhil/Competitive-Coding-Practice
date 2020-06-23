@@ -9,7 +9,7 @@ Approach =>
 
 package binaryTree.lowestCommonAncestor;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class DistanceBetweenNodes {
 	private static int findLevelFromRoot(Node root, int element, int level) {

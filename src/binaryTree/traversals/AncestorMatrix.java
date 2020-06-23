@@ -24,7 +24,7 @@ https://www.geeksforgeeks.org/construct-ancestor-matrix-from-a-given-binary-tree
 
 package binaryTree.traversals;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class AncestorMatrix {
 	private static void ancestorMatrix(Node root, int[][] matrix, int size) {

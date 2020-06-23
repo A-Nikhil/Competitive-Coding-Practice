@@ -19,7 +19,7 @@ https://www.geeksforgeeks.org/level-order-tree-traversal/
 
 package binaryTree.traversals;
 
-import binaryTree.Node;
+import commons.Node;
 
 import java.util.LinkedList;
 import java.util.Queue;

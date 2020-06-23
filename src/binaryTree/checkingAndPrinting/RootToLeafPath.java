@@ -22,7 +22,7 @@ printPathsRecur(tree, path[], pathlen)
 
 package binaryTree.checkingAndPrinting;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class RootToLeafPath {
 	private static void printPaths(Node root, int[] path, int pathLength) {

@@ -19,7 +19,7 @@ This method uses following rules to get the sum directly.
 
 package binaryTree.checkingAndPrinting;
 
-import binaryTree.Node;
+import commons.Node;
 
 @SuppressWarnings("Duplicates")
 public class BinarySumTree {

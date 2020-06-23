@@ -20,7 +20,7 @@ The main function is maxSumPath() that uses above two functions to get the compl
 
 package binaryTree.summation;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class MaximumLeafToRootPath {
 	private static int result = -9999;

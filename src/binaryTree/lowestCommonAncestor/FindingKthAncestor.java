@@ -1,6 +1,6 @@
 package binaryTree.lowestCommonAncestor;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class FindingKthAncestor {
 	private static int k;

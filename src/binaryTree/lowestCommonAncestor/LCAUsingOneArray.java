@@ -26,7 +26,7 @@ https://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/
 
 package binaryTree.lowestCommonAncestor;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class LCAUsingOneArray {
 	private static Node findLCA(Node root, int n1, int n2) {

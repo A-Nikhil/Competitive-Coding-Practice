@@ -34,7 +34,7 @@ https://www.geeksforgeeks.org/vertical-sum-in-a-given-binary-tree/
 
 package binaryTree.summation;
 
-import binaryTree.Node;
+import commons.Node;
 
 import java.util.HashMap;
 import java.util.HashSet;

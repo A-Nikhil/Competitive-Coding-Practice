@@ -27,7 +27,7 @@ https://www.geeksforgeeks.org/sum-numbers-formed-root-leaf-paths/
 
 package binaryTree.summation;
 
-import binaryTree.Node;
+import commons.Node;
 
 import java.util.ArrayList;
 

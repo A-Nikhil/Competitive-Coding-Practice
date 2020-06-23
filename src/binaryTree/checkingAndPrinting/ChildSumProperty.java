@@ -10,7 +10,7 @@ https://www.geeksforgeeks.org/check-for-children-sum-property-in-a-binary-tree/
 
 package binaryTree.checkingAndPrinting;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class ChildSumProperty {
 	private static boolean childSum(Node root) {

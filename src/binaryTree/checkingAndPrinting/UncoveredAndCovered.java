@@ -11,7 +11,7 @@ https://www.geeksforgeeks.org/check-sum-covered-uncovered-nodes-binary-tree/
 
 package binaryTree.checkingAndPrinting;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class UncoveredAndCovered {
 	private static int totalSum(Node root) {

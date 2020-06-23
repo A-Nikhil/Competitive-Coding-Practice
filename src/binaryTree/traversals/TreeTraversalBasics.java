@@ -1,6 +1,6 @@
 package binaryTree.traversals;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class TreeTraversalBasics {
 	private static void preOrder(Node root) {

@@ -6,7 +6,7 @@ https://www.geeksforgeeks.org/diagonal-traversal-of-binary-tree/
 
 package binaryTree.traversals;
 
-import binaryTree.Node;
+import commons.Node;
 
 import java.util.ArrayList;
 import java.util.Map;

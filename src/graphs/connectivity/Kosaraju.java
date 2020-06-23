@@ -17,7 +17,7 @@ Following is detailed Kosaraju’s algorithm.
  */
 package graphs.connectivity;
 
-import graphs.GraphMatrix;
+import commons.GraphMatrix;
 
 import java.util.Stack;
 

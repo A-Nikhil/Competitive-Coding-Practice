@@ -1,4 +1,4 @@
-package binaryTree;
+package commons;
 
 public class Node {
 	public Node left, right;

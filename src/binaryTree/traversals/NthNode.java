@@ -18,7 +18,7 @@ https://www.geeksforgeeks.org/find-n-th-node-inorder-traversal/
 
 package binaryTree.traversals;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class NthNode {
 	private static int position = 0;

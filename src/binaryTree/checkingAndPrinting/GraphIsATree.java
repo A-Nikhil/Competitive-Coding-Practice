@@ -20,7 +20,7 @@ https://www.geeksforgeeks.org/check-given-graph-tree/
 
 package binaryTree.checkingAndPrinting;
 
-import graphs.GraphMatrix;
+import commons.GraphMatrix;
 
 public class GraphIsATree {
 	private static boolean checkCycle(int[][] graph, int V, int node, int parent, boolean[] visited) {

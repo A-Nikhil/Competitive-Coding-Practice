@@ -58,7 +58,7 @@ https://www.geeksforgeeks.org/count-subtress-sum-given-value-x/
 
 package binaryTree.summation;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class SubTreesWithSumX {
 	private static int count;

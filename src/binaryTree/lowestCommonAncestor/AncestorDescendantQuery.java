@@ -18,7 +18,7 @@ https://www.geeksforgeeks.org/query-ancestor-descendant-relationship-tree/
 
 package binaryTree.lowestCommonAncestor;
 
-import graphs.GraphMatrix;
+import commons.GraphMatrix;
 
 public class AncestorDescendantQuery {
 	private static int[] timeOut, timeIn;

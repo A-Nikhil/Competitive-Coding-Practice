@@ -16,7 +16,7 @@ https://www.geeksforgeeks.org/diagonal-sum-binary-tree/
 
 package binaryTree.summation;
 
-import binaryTree.Node;
+import commons.Node;
 
 import java.util.HashMap;
 import java.util.LinkedList;

@@ -1,6 +1,6 @@
 package graphs.backtracking;
 
-import graphs.GraphMatrix;
+import commons.GraphMatrix;
 
 public class PathMoreThanK {
 	private static boolean pathTraversal(int[][] graph, int V,

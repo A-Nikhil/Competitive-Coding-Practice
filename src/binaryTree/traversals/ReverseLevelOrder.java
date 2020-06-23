@@ -11,7 +11,7 @@ https://www.geeksforgeeks.org/reverse-level-order-traversal/
 
 package binaryTree.traversals;
 
-import binaryTree.Node;
+import commons.Node;
 
 import java.util.LinkedList;
 import java.util.Queue;

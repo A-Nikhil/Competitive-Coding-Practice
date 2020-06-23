@@ -9,7 +9,7 @@ https://www.geeksforgeeks.org/count-nodes-within-k-distance-from-all-nodes-in-a-
 
 package graphs.traversals;
 
-import graphs.GraphMatrix;
+import commons.GraphMatrix;
 
 import java.util.Arrays;
 import java.util.LinkedList;

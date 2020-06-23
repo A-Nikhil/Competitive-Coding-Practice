@@ -34,7 +34,7 @@ left side path, root and right side path.
 
 package binaryTree.checkingAndPrinting;
 
-import binaryTree.Node;
+import commons.Node;
 
 @SuppressWarnings("Duplicates")
 public class PrintDiameter {

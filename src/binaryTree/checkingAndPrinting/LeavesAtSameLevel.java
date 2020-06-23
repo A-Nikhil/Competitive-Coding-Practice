@@ -38,7 +38,7 @@ https://www.geeksforgeeks.org/check-leaves-level/
 
 package binaryTree.checkingAndPrinting;
 
-import binaryTree.Node;
+import commons.Node;
 
 @SuppressWarnings("Duplicates")
 public class LeavesAtSameLevel {

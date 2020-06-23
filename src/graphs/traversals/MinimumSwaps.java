@@ -15,7 +15,7 @@ required to sort the array.
 
 package graphs.traversals;
 
-import graphs.GraphList;
+import commons.GraphList;
 
 import java.util.ArrayList;
 import java.util.Arrays;

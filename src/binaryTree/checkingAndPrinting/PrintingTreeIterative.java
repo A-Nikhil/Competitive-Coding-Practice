@@ -26,7 +26,7 @@ https://www.geeksforgeeks.org/print-root-leaf-path-without-using-recursion/
 
 package binaryTree.checkingAndPrinting;
 
-import binaryTree.Node;
+import commons.Node;
 
 import java.util.HashMap;
 import java.util.Stack;

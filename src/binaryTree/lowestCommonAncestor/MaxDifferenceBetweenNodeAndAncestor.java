@@ -18,8 +18,8 @@ https://www.geeksforgeeks.org/maximum-difference-between-node-and-its-ancestor-i
 
 package binaryTree.lowestCommonAncestor;
 
-import binaryTree.GlobalVar;
-import binaryTree.Node;
+import commons.GlobalVar;
+import commons.Node;
 
 public class MaxDifferenceBetweenNodeAndAncestor {
 	private static int findMinimum(Node root, GlobalVar small) {

@@ -18,7 +18,7 @@ https://www.geeksforgeeks.org/find-pair-root-leaf-path-sum-equals-roots-data/
 
 package binaryTree.summation;
 
-import binaryTree.Node;
+import commons.Node;
 
 import java.util.HashSet;
 

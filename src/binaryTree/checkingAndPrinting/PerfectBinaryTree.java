@@ -22,7 +22,7 @@ https://www.geeksforgeeks.org/check-weather-given-binary-tree-perfect-not/
 
 package binaryTree.checkingAndPrinting;
 
-import binaryTree.Node;
+import commons.Node;
 
 @SuppressWarnings("Duplicates")
 public class PerfectBinaryTree {

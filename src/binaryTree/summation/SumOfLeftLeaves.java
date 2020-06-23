@@ -17,7 +17,7 @@ https://www.geeksforgeeks.org/find-sum-left-leaves-given-binary-tree/
 
 package binaryTree.summation;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class SumOfLeftLeaves {
 	private static int sum = 0;

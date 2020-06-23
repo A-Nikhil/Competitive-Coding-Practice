@@ -12,7 +12,7 @@ https://www.geeksforgeeks.org/find-maximum-path-sum-two-leaves-binary-tree/
 
 package binaryTree.summation;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class MaxPathSum {
 	private static int result = Integer.MIN_VALUE;

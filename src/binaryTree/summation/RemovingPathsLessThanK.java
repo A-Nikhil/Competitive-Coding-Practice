@@ -58,7 +58,7 @@ https://www.geeksforgeeks.org/remove-all-nodes-which-lie-on-a-path-having-sum-le
 
 package binaryTree.summation;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class RemovingPathsLessThanK {
 	private static Node prune(Node root, int sum) {

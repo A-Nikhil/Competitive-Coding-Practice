@@ -18,7 +18,7 @@ https://www.geeksforgeeks.org/longest-path-between-any-pair-of-vertices/
  */
 package graphs.traversals;
 
-import graphs.GraphMatrix;
+import commons.GraphMatrix;
 
 import java.util.Arrays;
 import java.util.Stack;

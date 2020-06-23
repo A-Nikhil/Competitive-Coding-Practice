@@ -2,7 +2,7 @@
 Utility class to return an adjacency matrix from given connections
  */
 
-package graphs;
+package commons;
 
 public class GraphMatrix {
 	private final int[][] graph;

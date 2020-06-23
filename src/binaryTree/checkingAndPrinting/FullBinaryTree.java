@@ -15,7 +15,7 @@ https://www.geeksforgeeks.org/check-whether-binary-tree-full-binary-tree-not/
  */
 package binaryTree.checkingAndPrinting;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class FullBinaryTree {
 	private static boolean isFull(Node root) {

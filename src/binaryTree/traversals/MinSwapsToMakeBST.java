@@ -10,7 +10,7 @@ The minimum number of swap required to get the array sorted will be the answer.
 
 package binaryTree.traversals;
 
-import binaryTree.Node;
+import commons.Node;
 
 import java.util.ArrayList;
 import java.util.Arrays;

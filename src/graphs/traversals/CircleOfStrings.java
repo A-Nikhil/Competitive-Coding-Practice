@@ -13,7 +13,7 @@ https://www.geeksforgeeks.org/find-array-strings-can-chained-form-circle-set-2/
 
 package graphs.traversals;
 
-import graphs.GraphList;
+import commons.GraphList;
 
 import java.util.ArrayList;
 

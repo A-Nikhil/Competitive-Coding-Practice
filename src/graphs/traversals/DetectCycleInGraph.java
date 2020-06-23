@@ -1,6 +1,6 @@
 package graphs.traversals;
 
-import graphs.GraphMatrix;
+import commons.GraphMatrix;
 
 public class DetectCycleInGraph {
 	private static boolean cycleUtil(int[][] graph, int V, int node,

@@ -8,7 +8,7 @@ Return the common element just before the mismatch.
 
 package binaryTree.lowestCommonAncestor;
 
-import binaryTree.Node;
+import commons.Node;
 
 import java.util.ArrayList;
 

@@ -37,7 +37,7 @@ https://www.geeksforgeeks.org/sum-parent-nodes-child-node-x/
  */
 package binaryTree.summation;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class SumOfParentsOfX {
 	private static int sum;

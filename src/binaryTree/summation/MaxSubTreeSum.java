@@ -36,7 +36,7 @@ https://www.geeksforgeeks.org/find-largest-subtree-sum-tree/
 
 package binaryTree.summation;
 
-import binaryTree.Node;
+import commons.Node;
 
 public class MaxSubTreeSum {
 	private static int sum = 0;
