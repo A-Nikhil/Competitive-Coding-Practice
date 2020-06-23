@@ -7,6 +7,7 @@ import java.util.Queue;
 
 public class JumpingNumbers {
 	private final ArrayList<Integer> jumpers = new ArrayList<>();
+
 	public static void main(String[] args) {
 		new JumpingNumbers().printJumping(40);
 	}
@@ -17,7 +18,7 @@ public class JumpingNumbers {
 			BFS(limit, i);
 		}
 		Collections.sort(jumpers);
-		for(int i: jumpers){
+		for (int i : jumpers) {
 			System.out.print(i + " ");
 		}
 	}

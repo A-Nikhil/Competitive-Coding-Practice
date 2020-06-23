@@ -32,20 +32,15 @@ import java.util.HashMap;
 import java.util.Stack;
 
 public class PrintingTreeIterative {
-	private static void printTopToBottomPath(Node root, HashMap<Node, Node> parent) {
-		Stack<Node> stack = new Stack<>();
-		while (root != null) {
-			// Push leaf node
-			stack.push(root);
-			// Iterate upwards
-			root = parent.get(root);
-		}
+	public static void main(String[] args) {
+		Node root = new Node(10);
+		root.left = new Node(8);
+		root.right = new Node(2);
+		root.left.left = new Node(3);
+		root.left.right = new Node(5);
+		root.right.left = new Node(2);
 
-		while (!stack.isEmpty()) {
-			root = stack.pop();
-			System.out.print(root.data + " => ");
-		}
-		System.out.println();
+		printPaths(root);
 	}
 
 	private static void printPaths(Node root) {
@@ -80,14 +75,19 @@ public class PrintingTreeIterative {
 		}
 	}
 
-	public static void main(String[] args) {
-		Node root=new Node(10);
-		root.left = new Node(8);
-		root.right = new Node(2);
-		root.left.left = new Node(3);
-		root.left.right = new Node(5);
-		root.right.left = new Node(2);
+	private static void printTopToBottomPath(Node root, HashMap<Node, Node> parent) {
+		Stack<Node> stack = new Stack<>();
+		while (root != null) {
+			// Push leaf node
+			stack.push(root);
+			// Iterate upwards
+			root = parent.get(root);
+		}
 
-		printPaths(root);
+		while (!stack.isEmpty()) {
+			root = stack.pop();
+			System.out.print(root.data + " => ");
+		}
+		System.out.println();
 	}
 }

@@ -41,7 +41,7 @@ public class GenerateNumberFromRootToLeafPath {
 
 		// if leaf, add number generated to list
 		if (root.left == null && root.right == null) {
-			numbers.add(val*10+root.data);
+			numbers.add(val * 10 + root.data);
 		}
 
 		preorderTraversal(root.left, val * 10 + root.data);

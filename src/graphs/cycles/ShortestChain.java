@@ -14,19 +14,6 @@ public class ShortestChain {
 		new ShortestChain().findChainLength(dictionary, start, find);
 	}
 
-	private boolean isAdjacent(String a, String b) {
-		int count = 0;
-		for (int pos = 0; pos < a.length(); pos++) {
-			if (a.charAt(pos) != b.charAt(pos)) {
-				count++;
-			}
-			if (count > 1) {
-				return false;
-			}
-		}
-		return count == 1;
-	}
-
 	private void findChainLength(ArrayList<String> dictionary, String start, String target) {
 		Queue<String> queue = new LinkedList<>();
 		queue.add(start);
@@ -48,5 +35,18 @@ public class ShortestChain {
 			length++;
 		}
 		System.out.println("Length = " + (length + 1));
+	}
+
+	private boolean isAdjacent(String a, String b) {
+		int count = 0;
+		for (int pos = 0; pos < a.length(); pos++) {
+			if (a.charAt(pos) != b.charAt(pos)) {
+				count++;
+			}
+			if (count > 1) {
+				return false;
+			}
+		}
+		return count == 1;
 	}
 }

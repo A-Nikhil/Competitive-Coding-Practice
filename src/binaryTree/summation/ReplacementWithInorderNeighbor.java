@@ -47,8 +47,8 @@ are its inorder predecessor and inorder successor respectively.
 
 package binaryTree.summation;
 
-import commons.Node;
 import commons.ArrayPrinter;
+import commons.Node;
 
 public class ReplacementWithInorderNeighbor {
 	private static int[] arr;

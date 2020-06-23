@@ -61,10 +61,10 @@ public class DistanceBetweenNodes {
 		root.right.right = new Node(7);
 		root.right.left.right = new Node(8);
 
-		System.out.println("Dist(4, 5) = "+findDistance(root, 4, 5));
-		System.out.println("Dist(4, 6) = "+findDistance(root, 4, 6));
-		System.out.println("Dist(3, 4) = "+findDistance(root, 3, 4));
-		System.out.println("Dist(2, 4) = "+findDistance(root, 2, 4));
-		System.out.println("Dist(8, 5) = " +findDistance(root, 8, 5));
+		System.out.println("Dist(4, 5) = " + findDistance(root, 4, 5));
+		System.out.println("Dist(4, 6) = " + findDistance(root, 4, 6));
+		System.out.println("Dist(3, 4) = " + findDistance(root, 3, 4));
+		System.out.println("Dist(2, 4) = " + findDistance(root, 2, 4));
+		System.out.println("Dist(8, 5) = " + findDistance(root, 8, 5));
 	}
 }

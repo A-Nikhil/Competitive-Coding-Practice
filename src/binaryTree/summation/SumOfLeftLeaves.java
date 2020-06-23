@@ -21,6 +21,7 @@ import commons.Node;
 
 public class SumOfLeftLeaves {
 	private static int sum = 0;
+
 	private static void sumCalculator(Node root) {
 		if (root == null) {
 			return;

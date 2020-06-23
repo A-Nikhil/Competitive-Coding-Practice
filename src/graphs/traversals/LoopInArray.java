@@ -12,7 +12,7 @@ package graphs.traversals;
 
 public class LoopInArray {
 	public static void main(String[] args) {
-		int[] arr = {1,1,1,1,1};
+		int[] arr = {1, 1, 1, 1, 1};
 		int n = arr.length;
 		System.out.println(checkForLoops(arr, n));
 	}

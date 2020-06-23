@@ -23,6 +23,12 @@ https://www.geeksforgeeks.org/sum-nodes-k-th-level-tree-represented-string/
 package binaryTree.summation;
 
 public class SumOfRootsAtALevel {
+	public static void main(String[] args) {
+		String tree = "(0(5(6()())(4()(9()())))(7(1()())(3()())))";
+		int k = 2;
+		System.out.println(getSum(tree, k));
+	}
+
 	private static int getSum(String tree, int k) {
 		int sum = 0, level = -1;
 		for (int i = 0; i < tree.length(); i++) {
@@ -37,11 +43,5 @@ public class SumOfRootsAtALevel {
 			}
 		}
 		return sum;
-	}
-
-	public static void main(String[] args) {
-		String tree = "(0(5(6()())(4()(9()())))(7(1()())(3()())))";
-		int k = 2;
-		System.out.println(getSum(tree, k));
 	}
 }

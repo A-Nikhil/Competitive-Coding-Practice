@@ -42,11 +42,11 @@ public class KCores {
 			}
 		}
 
-		for (int v=0; v<V; v++) {
+		for (int v = 0; v < V; v++) {
 			if (degree[v] >= K) {
 				System.out.print("\n" + v + " => ");
-				for (int x=0; x<V; x++) {
-					if (graph[v][x]==1 && degree[x]>=K){
+				for (int x = 0; x < V; x++) {
+					if (graph[v][x] == 1 && degree[x] >= K) {
 						System.out.print(x + ", ");
 					}
 				}

@@ -52,12 +52,12 @@ public class LCAUsing3Arrays {
 
 	private static int findLCA(Node root, int n1, int n2) {
 		node1path = new ArrayList<>();
-		node2path =  new ArrayList<>();
+		node2path = new ArrayList<>();
 		traversal(root, n1, true);
 		traversal(root, n2, false);
 		int size = Math.min(node1path.size(), node2path.size());
 		int i;
-		for (i=size-1; i>0; i--) {
+		for (i = size - 1; i > 0; i--) {
 			if (!node1path.get(i).equals(node2path.get(i)))
 				break;
 		}

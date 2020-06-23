@@ -3,7 +3,7 @@ package binaryTree.traversals;
 import commons.Node;
 
 public class TreeTraversalBasics {
-	private static void preOrder(Node root) {
+	public static void preOrder(Node root) {
 		if (root == null) {
 			return;
 		}
@@ -12,7 +12,7 @@ public class TreeTraversalBasics {
 		preOrder(root.right);
 	}
 
-	private static void inOrder(Node root) {
+	public static void inOrder(Node root) {
 		if (root == null) {
 			return;
 		}
@@ -21,7 +21,7 @@ public class TreeTraversalBasics {
 		inOrder(root.right);
 	}
 
-	private static void postOrder(Node root) {
+	public static void postOrder(Node root) {
 		if (root == null) {
 			return;
 		}
@@ -30,6 +30,7 @@ public class TreeTraversalBasics {
 		System.out.println(root.data);
 	}
 
+	@SuppressWarnings("Duplicates")
 	public static void main(String[] args) {
 		Node root;
 		root = new Node(1);

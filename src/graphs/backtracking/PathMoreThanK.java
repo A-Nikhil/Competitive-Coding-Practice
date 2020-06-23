@@ -18,7 +18,7 @@ public class PathMoreThanK {
 					return true;
 				}
 				path[v] = true;
-				if (pathTraversal(graph,V, path, v, K - graph[node][v])) {
+				if (pathTraversal(graph, V, path, v, K - graph[node][v])) {
 					return true;
 				}
 				path[v] = false;
@@ -30,7 +30,7 @@ public class PathMoreThanK {
 	private static boolean pathMoreThanK(int[][] graph, int V, int source, int K) {
 		boolean[] path = new boolean[V];
 		path[source] = true;
-		return pathTraversal(graph, V, path,source, K);
+		return pathTraversal(graph, V, path, source, K);
 	}
 
 	public static void main(String[] args) {

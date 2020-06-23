@@ -44,7 +44,7 @@ public class SameInPrePost {
 		int V = inorder.length;
 		tempPostorder = new int[V];
 		createPostOrder(inorder, preorder, 0, V - 1);
-		for (int i=0; i<V; i++) {
+		for (int i = 0; i < V; i++) {
 			if (postorder[i] != tempPostorder[i]) {
 				return false;
 			}

@@ -25,6 +25,18 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class LevelOrderTraversal {
+	@SuppressWarnings("Duplicates")
+	public static void main(String[] args) {
+		Node root;
+		root = new Node(1);
+		root.left = new Node(2);
+		root.right = new Node(3);
+		root.left.left = new Node(4);
+		root.left.right = new Node(5);
+		System.out.println("Level order traversal of binary tree is - ");
+		levelOrder(root);
+	}
+
 	private static void levelOrder(Node root) {
 		Queue<Node> queue = new LinkedList<>();
 		Node tempNode = root;
@@ -39,17 +51,5 @@ public class LevelOrderTraversal {
 				queue.add(tempNode.right);
 			}
 		}
-	}
-
-	@SuppressWarnings("Duplicates")
-	public static void main(String[] args) {
-		Node root;
-		root = new Node(1);
-		root.left = new Node(2);
-		root.right = new Node(3);
-		root.left.left = new Node(4);
-		root.left.right = new Node(5);
-		System.out.println("Level order traversal of binary tree is - ");
-		levelOrder(root);
 	}
 }

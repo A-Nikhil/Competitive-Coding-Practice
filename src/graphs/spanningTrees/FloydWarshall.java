@@ -2,6 +2,7 @@ package graphs.spanningTrees;
 
 public class FloydWarshall {
 	private static final int INF = 9999;
+
 	public static void main(String[] args) {
 		int[][] graph = {
 				{0, 5, INF, 10},

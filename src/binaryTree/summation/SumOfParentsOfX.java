@@ -41,6 +41,7 @@ import commons.Node;
 
 public class SumOfParentsOfX {
 	private static int sum;
+
 	private static void sumOfParentsX(Node root, int x) {
 		if (root == null) {
 			return;

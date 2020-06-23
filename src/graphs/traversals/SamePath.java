@@ -5,9 +5,9 @@ Given a tree and 2 vertices, this program finds out if both the vertices lie on 
 package graphs.traversals;
 
 public class SamePath {
-	private int[] inTime;
-	private int[] outTime;
-	private int V;
+	private final int[] inTime;
+	private final int[] outTime;
+	private final int V;
 	private int timer;
 
 	SamePath(int V) {
@@ -30,9 +30,9 @@ public class SamePath {
 		};
 		boolean[] visited = new boolean[7];
 		samePath.DFSUtil(graph, 0, visited);
-		System.out.println(samePath.query(1,5));
-		System.out.println(samePath.query(1,6));
-		System.out.println(samePath.query(2,6));
+		System.out.println(samePath.query(1, 5));
+		System.out.println(samePath.query(1, 6));
+		System.out.println(samePath.query(2, 6));
 	}
 
 	private void DFSUtil(int[][] graph, int v, boolean[] visited) {
@@ -49,7 +49,8 @@ public class SamePath {
 	}
 
 	private boolean query(int v, int u) {
-		v--; u--;
+		v--;
+		u--;
 		return (((inTime[v] < inTime[u]) && (outTime[v] > outTime[u]))
 				|| ((inTime[u] < inTime[v]) && (outTime[u] > outTime[v])));
 	}
