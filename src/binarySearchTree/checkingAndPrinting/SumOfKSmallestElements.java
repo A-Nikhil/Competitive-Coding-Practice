@@ -19,16 +19,48 @@ until the count becomes k.
 
 package binarySearchTree.checkingAndPrinting;
 
+import commons.BinarySearchTree;
 import commons.Node;
+
+import java.util.ArrayList;
 
 @SuppressWarnings("Duplicates")
 public class SumOfKSmallestElements {
-	private static int sum = 0;
-	private static void inorderTraversal(Node root, int k, int count) {
+	private static ArrayList<Integer> list;
+
+	public static void main(String[] args) {
+		/*    20
+			/    \
+		   8     22
+		 /   \
+		4     12
+			 /   \
+			10    14
+          */
+		BinarySearchTree bst = new BinarySearchTree();
+		Node root = bst.insert(null, 20);
+		bst.insert(root, 8);
+		bst.insert(root, 4);
+		bst.insert(root, 12);
+		bst.insert(root, 10);
+		bst.insert(root, 14);
+		bst.insert(root, 22);
+		int k = 3;
+		list = new ArrayList<>();
+		inorderTraversal(root);
+		int sum = 0;
+		for (int i = 0; i < k; i++) {
+			sum += list.get(i);
+		}
+		System.out.println(sum);
+	}
+
+	private static void inorderTraversal(Node root) {
 		if (root == null) {
 			return;
 		}
-
-		inorderTraversal(root.left, k, count);
+		inorderTraversal(root.left);
+		list.add(root.data);
+		inorderTraversal(root.right);
 	}
 }
