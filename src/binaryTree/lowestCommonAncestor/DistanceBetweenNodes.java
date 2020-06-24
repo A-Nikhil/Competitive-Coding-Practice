@@ -51,6 +51,7 @@ public class DistanceBetweenNodes {
 				+ findLevelFromRoot(lca, n2, 0);
 	}
 
+	@SuppressWarnings("Duplicates")
 	public static void main(String[] args) {
 		Node root = new Node(1);
 		root.left = new Node(2);

@@ -7,7 +7,7 @@ public class TreeTraversalBasics {
 		if (root == null) {
 			return;
 		}
-		System.out.println(root.data);
+		System.out.print(root.data + " ");
 		preOrder(root.left);
 		preOrder(root.right);
 	}
@@ -17,7 +17,7 @@ public class TreeTraversalBasics {
 			return;
 		}
 		inOrder(root.left);
-		System.out.println(root.data);
+		System.out.print(root.data + " ");
 		inOrder(root.right);
 	}
 
@@ -27,7 +27,7 @@ public class TreeTraversalBasics {
 		}
 		postOrder(root.left);
 		postOrder(root.right);
-		System.out.println(root.data);
+		System.out.print(root.data + " ");
 	}
 
 	@SuppressWarnings("Duplicates")
