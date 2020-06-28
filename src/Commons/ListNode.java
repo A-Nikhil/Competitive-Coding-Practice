@@ -34,4 +34,31 @@ public class ListNode<T> {
 			head = head.next;
 		}
 	}
+
+	public void convertCircular() {
+		ListNode<T> node = this.head;
+		while (node.next != null) {
+			node = node.next;
+		}
+		node.next = this.head;
+	}
+
+	public void printCircularList() {
+		ListNode<T> node = this.head;
+		while (this.head.next != node) {
+			System.out.print(this.head.data + " ");
+			this.head = this.head.next;
+		}
+		System.out.println(this.head.data);
+		this.head = node;
+	}
+
+	public void printCircularList(ListNode<T> head) {
+		ListNode<T> node = head;
+		while (head.next != node) {
+			System.out.print(head.data + " ");
+			head = head.next;
+		}
+		System.out.println(head.data);
+	}
 }
