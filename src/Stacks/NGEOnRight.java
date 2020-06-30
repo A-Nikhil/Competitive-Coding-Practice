@@ -2,7 +2,7 @@ package Stacks;
 
 import java.util.Stack;
 
-public class NGE {
+public class NGEOnRight {
 	public static void main(String[] args) {
 		int[] values = {3, 4, 2, 7, 5, 8, 10, 6};
 		int[] queries = {3, 6, 1};
