@@ -38,13 +38,19 @@ public class CyclesInDigraph {
 	}
 
 	public static void main(String[] args) {
+//		int[][] graph = {
+//				{0, 1, 1, 0},
+//				{0, 0, 0, 0},
+//				{0, 0, 0, 1},
+//				{0, 0, 0, 0}
+//		};
+//		int V = 4;
+
 		int[][] graph = {
-				{0, 1, 1, 0},
-				{0, 0, 0, 0},
-				{0, 0, 0, 1},
-				{0, 0, 0, 0}
+				{0, 1},
+				{1, 0}
 		};
-		int V = 4;
+		int V = 2;
 		System.out.println(detectCycle(graph, V));
 	}
 }
