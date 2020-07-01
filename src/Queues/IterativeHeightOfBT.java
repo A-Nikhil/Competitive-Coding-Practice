@@ -26,10 +26,33 @@ public class IterativeHeightOfBT {
                    /   \
                   6     7    */
 
-		System.out.println("Maximum width = " + returnHeight(root));
+		System.out.println("Maximum height = " + returnHeight(root));
 	}
+
 	private static int returnHeight(Node root) {
-		Queue<Integer> queue = new LinkedList<>();
-		
+		if (root == null) {
+			return -1;
+		}
+		Queue<Node> queue = new LinkedList<>();
+		Node currNode;
+		queue.add(root);
+		int nodeCount, height = 0;
+		while (true) {
+			nodeCount = queue.size();
+			if (nodeCount == 0) {
+				return height;
+			}
+			height++;
+			while (nodeCount > 0 && !queue.isEmpty()) {
+				currNode = queue.remove();
+				if (currNode.left != null) {
+					queue.add(currNode.left);
+				}
+				if (currNode.right != null) {
+					queue.add(currNode.right);
+				}
+				nodeCount--;
+			}
+		}
 	}
 }
