@@ -3,6 +3,7 @@
     <words>
       <w>bitonic</w>
       <w>coeff</w>
+      <w>delim</w>
       <w>kahn</w>
       <w>kosaraju</w>
       <w>llist</w>
