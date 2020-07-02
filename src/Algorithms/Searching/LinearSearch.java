@@ -3,7 +3,7 @@ package Algorithms.Searching;
 @SuppressWarnings("Duplicates")
 public class LinearSearch {
 	public static void main(String[] args) {
-		int[] arr = {10, 15, 19, 23, 48, 26, 54};
+		int[] arr = {10, 23, 19, 15, 48, 26, 54};
 		int element = 26;
 		System.out.println(linearSearch(arr, arr.length, element));
 	}
