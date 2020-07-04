@@ -6,13 +6,14 @@ public class NumberOfNonDecreasingNumbers {
 		System.out.println(getNumber(2));
 		System.out.println(getNumber(3));
 	}
+
 	private static long getNumber(int n) {
-		if (n==1) {
+		if (n == 1) {
 			return 10L;
 		}
 
 		long count = 1L, N = 10;
-		for (int i=1; i<=n; i++) {
+		for (int i = 1; i <= n; i++) {
 			count *= (N + i - 1);
 			count /= i;
 		}

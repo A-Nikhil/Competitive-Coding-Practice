@@ -37,6 +37,16 @@ import java.util.Map;
 import java.util.TreeSet;
 
 public class UniqueNumberInSubSequence {
+	public static void main(String[] args) {
+		int[] a = {3, 3, 3, 4, 4, 2},
+				b = {1, 2, 2, 3, 3};
+		int Ka = 4,
+				Kb = 3;
+		findMaxUnique(a, a.length, Ka);
+		System.out.println();
+		findMaxUnique(b, b.length, Kb);
+	}
+
 	private static void findMaxUnique(int[] arr, int n, int k) {
 		TreeSet<Integer> set = new TreeSet<>();
 		HashMap<Integer, Integer> map = new HashMap<>();
@@ -84,15 +94,5 @@ public class UniqueNumberInSubSequence {
 				set.remove(x);
 			}
 		}
-	}
-
-	public static void main(String[] args) {
-		int[] a = {3, 3, 3, 4, 4, 2},
-				b = {1, 2, 2, 3, 3};
-		int Ka = 4,
-				Kb = 3;
-		findMaxUnique(a, a.length, Ka);
-		System.out.println();
-		findMaxUnique(b, b.length, Kb);
 	}
 }

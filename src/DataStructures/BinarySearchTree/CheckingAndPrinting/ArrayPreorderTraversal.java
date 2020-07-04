@@ -65,10 +65,21 @@ package DataStructures.BinarySearchTree.CheckingAndPrinting;
 import java.util.Stack;
 
 public class ArrayPreorderTraversal {
+	public static void main(String[] args) {
+		int[] pre1 = {2, 4, 3};
+		int[] pre2 = {2, 4, 1};
+		int[] pre3 = {40, 30, 35, 80, 100};
+		int[] pre4 = {40, 30, 35, 20, 80, 100};
+		System.out.println(checkIfPreorder(pre1, pre1.length));
+		System.out.println(checkIfPreorder(pre2, pre2.length));
+		System.out.println(checkIfPreorder(pre3, pre3.length));
+		System.out.println(checkIfPreorder(pre4, pre4.length));
+	}
+
 	private static boolean checkIfPreorder(int[] preorder, int n) {
 		Stack<Integer> stack = new Stack<>();
 		int root = Integer.MIN_VALUE;
-		for (int i=0; i<n; i++) {
+		for (int i = 0; i < n; i++) {
 			if (preorder[i] < root) {
 				return false;
 			}
@@ -79,16 +90,5 @@ public class ArrayPreorderTraversal {
 			stack.push(preorder[i]);
 		}
 		return true;
-	}
-
-	public static void main(String[] args) {
-		int[] pre1 = {2, 4, 3};
-		int[] pre2 = {2, 4, 1};
-		int[] pre3 = {40, 30, 35, 80, 100};
-		int[] pre4 = {40, 30, 35, 20, 80, 100};
-		System.out.println(checkIfPreorder(pre1,pre1.length));
-		System.out.println(checkIfPreorder(pre2,pre2.length));
-		System.out.println(checkIfPreorder(pre3,pre3.length));
-		System.out.println(checkIfPreorder(pre4,pre4.length));
 	}
 }

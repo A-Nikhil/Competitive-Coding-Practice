@@ -28,6 +28,7 @@ public class SortedSubsequenceExists {
 		}
 		traverseAndCheck(root.right, arr, index);
 	}
+
 	private static boolean subsequenceExists(Node root, int[] arr, int n) {
 		GlobalVar index = new GlobalVar(0);
 		traverseAndCheck(root, arr, index);

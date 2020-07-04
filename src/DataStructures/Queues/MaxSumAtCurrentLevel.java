@@ -35,18 +35,18 @@ public class MaxSumAtCurrentLevel {
 		}
 		Queue<Node> queue = new LinkedList<>();
 		queue.add(root);
-		int maxSum = Integer.MIN_VALUE, count, currSum ;
+		int maxSum = Integer.MIN_VALUE, count, currSum;
 		while (!queue.isEmpty()) {
 			count = queue.size(); // level width of next level
 			currSum = 0;
 			while (count > 0) {
 				root = queue.poll();
-				if (root !=  null) {
+				if (root != null) {
 					currSum += root.data;
 					if (root.left != null) {
 						queue.add(root.left);
 					}
-					if (root.right != null){
+					if (root.right != null) {
 						queue.add(root.right);
 					}
 				}

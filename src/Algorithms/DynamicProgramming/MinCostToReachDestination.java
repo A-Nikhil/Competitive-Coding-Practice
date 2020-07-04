@@ -3,7 +3,7 @@ package Algorithms.DynamicProgramming;
 import java.util.Arrays;
 
 public class MinCostToReachDestination {
-	private static int INF = 99999;
+	private static final int INF = 99999;
 
 	public static void main(String[] args) {
 		int[][] cost = {

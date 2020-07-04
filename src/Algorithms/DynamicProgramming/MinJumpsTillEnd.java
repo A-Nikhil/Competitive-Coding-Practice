@@ -21,6 +21,6 @@ public class MinJumpsTillEnd {
 				}
 			}
 		}
-		return jumps[n-1];
+		return jumps[n - 1];
 	}
 }

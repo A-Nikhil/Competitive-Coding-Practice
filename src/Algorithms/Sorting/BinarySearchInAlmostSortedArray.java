@@ -1,6 +1,12 @@
 package Algorithms.Sorting;
 
 public class BinarySearchInAlmostSortedArray {
+	public static void main(String[] args) {
+		int[] arr = {10, 3, 40, 20, 50, 80, 70};
+		int key = 40;
+		System.out.println(findElement(arr, arr.length, key));
+	}
+
 	private static int findElement(int[] arr, int n, int ele) {
 		int lo = 0, hi = n - 1, mid;
 		while (lo <= hi) {
@@ -22,11 +28,5 @@ public class BinarySearchInAlmostSortedArray {
 			}
 		}
 		return -1;
-	}
-
-	public static void main(String[] args) {
-		int[] arr = {10, 3, 40, 20, 50, 80, 70};
-		int key = 40;
-		System.out.println(findElement(arr, arr.length, key));
 	}
 }

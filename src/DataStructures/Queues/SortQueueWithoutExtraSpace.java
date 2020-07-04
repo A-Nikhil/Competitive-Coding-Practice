@@ -16,11 +16,11 @@ public class SortQueueWithoutExtraSpace {
 		sortQueue(list);
 
 		//print sorted Queue
-		while(!list.isEmpty())
-		{
+		while (!list.isEmpty()) {
 			System.out.print(list.poll() + " ");
 		}
 	}
+
 	private static void sortQueue(Queue<Integer> queue) {
 		for (int i = 1; i <= queue.size(); i++) {
 			int minIndex = getMinIndex(queue, (queue.size() - i));

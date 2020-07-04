@@ -3,6 +3,11 @@ package Algorithms.Sorting;
 import Commons.ArrayPrinter;
 
 public class SortInWave {
+	public static void main(String[] args) {
+		int[] arr = {10, 90, 49, 2, 1, 5, 23};
+		waveSort(arr, arr.length);
+	}
+
 	private static void waveSort(int[] arr, int n) {
 		int temp;
 		for (int i = 0; i < n; i += 2) {
@@ -18,10 +23,5 @@ public class SortInWave {
 			}
 		}
 		new ArrayPrinter().printArray(arr, arr.length);
-	}
-
-	public static void main(String[] args) {
-		int[] arr = {10, 90, 49, 2, 1, 5, 23};
-		waveSort(arr, arr.length);
 	}
 }

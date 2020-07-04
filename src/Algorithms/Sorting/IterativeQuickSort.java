@@ -5,6 +5,12 @@ import Commons.ArrayPrinter;
 import java.util.Stack;
 
 public class IterativeQuickSort {
+	public static void main(String[] args) {
+		int[] arr = {4, 3, 5, 2, 1, 3, 2, 3};
+		int n = 8;
+		quickSort(arr, 0, n - 1);
+	}
+
 	private static void quickSort(int[] arr, int l, int h) {
 		Stack<Integer> stack = new Stack<>();
 		stack.push(l);
@@ -40,11 +46,5 @@ public class IterativeQuickSort {
 		arr[i + 1] = arr[high];
 		arr[high] = temp;
 		return i + 1;
-	}
-
-	public static void main(String[] args) {
-		int[] arr = { 4, 3, 5, 2, 1, 3, 2, 3 };
-		int n = 8;
-		quickSort(arr, 0, n-1);
 	}
 }

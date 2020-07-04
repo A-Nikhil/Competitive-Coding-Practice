@@ -2,7 +2,7 @@ package Algorithms.DynamicProgramming;
 
 public class MatrixChainMultiplication {
 	public static void main(String[] args) {
-		int[] arr =  {10, 20, 30, 40, 30};
+		int[] arr = {10, 20, 30, 40, 30};
 		System.out.println(matrixChain(arr, arr.length));
 	}
 
@@ -18,6 +18,6 @@ public class MatrixChainMultiplication {
 						dp[i][i + l - 1] + p[i - 1] * p[i + l - 1] * p[i + l]
 				);
 
-		return dp[1][n-1];
+		return dp[1][n - 1];
 	}
 }

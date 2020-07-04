@@ -3,17 +3,6 @@ package DataStructures.LinkedList.SinglyLinkedLists;
 import Commons.ListNode;
 
 public class CountDuplicates {
-	private static int countDuplicates(ListNode<Integer> head, int key) {
-		int count = 0;
-		while (head != null) {
-			if (head.data == key) {
-				count++;
-			}
-			head = head.next;
-		}
-		return count;
-	}
-
 	public static void main(String[] args) {
 		ListNode<Integer> llist = new ListNode<>();
 		llist.push(1);
@@ -24,5 +13,16 @@ public class CountDuplicates {
 		llist.printList();
 		System.out.println();
 		System.out.println(countDuplicates(llist.head, 1));
+	}
+
+	private static int countDuplicates(ListNode<Integer> head, int key) {
+		int count = 0;
+		while (head != null) {
+			if (head.data == key) {
+				count++;
+			}
+			head = head.next;
+		}
+		return count;
 	}
 }

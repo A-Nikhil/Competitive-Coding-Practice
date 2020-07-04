@@ -19,9 +19,9 @@ https://www.geeksforgeeks.org/remove-bst-keys-outside-the-given-range/
 
 package DataStructures.BinarySearchTree.CheckingAndPrinting;
 
-import DataStructures.BinaryTree.Traversals.TreeTraversalBasics;
 import Commons.BinarySearchTree;
 import Commons.Node;
+import DataStructures.BinaryTree.Traversals.TreeTraversalBasics;
 
 public class FixBST {
 	private static Node fixBST(Node root, int min, int max) {

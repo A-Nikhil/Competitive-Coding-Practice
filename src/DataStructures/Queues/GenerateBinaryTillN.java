@@ -18,10 +18,11 @@ public class GenerateBinaryTillN {
 		System.out.println();
 		printBinary(9);
 	}
+
 	private static void printBinary(int n) {
 		Queue<String> queue = new LinkedList<>();
 		queue.add("1");
-		for (int i=1; i<=n; i++) {
+		for (int i = 1; i <= n; i++) {
 			String top = queue.poll();
 			System.out.print(top + " ");
 			queue.add(top + "0");

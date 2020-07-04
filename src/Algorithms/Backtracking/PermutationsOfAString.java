@@ -23,6 +23,6 @@ public class PermutationsOfAString {
 	}
 
 	public static void main(String[] args) {
-		permute("ABCD", 0, 4-1);
+		permute("ABCD", 0, 4 - 1);
 	}
 }

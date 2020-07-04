@@ -3,6 +3,10 @@ package DataStructures.Stacks;
 import java.util.Stack;
 
 public class balancingBrackets {
+	public static void main(String[] args) {
+		System.out.println(isBalanced("{[()]}"));
+	}
+
 	private static String isBalanced(String s) {
 		Stack<Character> stack = new Stack<>();
 		char ch;
@@ -24,9 +28,5 @@ public class balancingBrackets {
 		} else {
 			return "YES";
 		}
-	}
-
-	public static void main(String[] args) {
-		System.out.println(isBalanced("{[()]}"));
 	}
 }

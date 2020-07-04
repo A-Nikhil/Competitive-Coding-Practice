@@ -3,6 +3,11 @@ package Algorithms.DynamicProgramming;
 import java.util.Arrays;
 
 public class longestIncreasingSubsequence {
+	public static void main(String[] args) {
+		int[] arr = {10, 22, 9, 33, 21, 50, 41, 60};
+		System.out.println(lis(arr, arr.length));
+	}
+
 	private static int lis(int[] arr, int n) {
 		int[] lis = new int[n];
 		int max = 1;
@@ -18,10 +23,5 @@ public class longestIncreasingSubsequence {
 			}
 		}
 		return max;
-	}
-
-	public static void main(String[] args) {
-		int[] arr = {10, 22, 9, 33, 21, 50, 41, 60};
-		System.out.println(lis(arr, arr.length));
 	}
 }

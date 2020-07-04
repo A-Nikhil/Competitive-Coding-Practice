@@ -18,13 +18,13 @@ public class ChainProblem {
 			map.put(i[0], i[1]);
 		}
 		Pair[] vals = new Pair[n];
-		int index=0;
+		int index = 0;
 		for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
 			vals[index++] = new Pair(entry.getKey(), entry.getValue());
 		}
 		int max = 0;
 		int[] lis = new int[n];
-		Arrays.fill(lis,1);
+		Arrays.fill(lis, 1);
 		for (int i = 1; i < n; i++) {
 			for (int j = 0; j < i; j++) {
 				if (vals[j].b < vals[i].a && lis[i] < lis[j] + 1) {

@@ -19,7 +19,8 @@ public class Josephus {
 		}
 		lastPtr.next = head;
 
-		int count = 0, countM = 0; node = head;
+		int count = 0, countM = 0;
+		node = head;
 		while (count < n) {
 			countM++;
 			if (countM == m) {

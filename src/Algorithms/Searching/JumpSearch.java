@@ -13,14 +13,14 @@ public class JumpSearch {
 	private static int jumpSearch(int[] arr, int n, int element) {
 		Arrays.sort(arr);
 		int m = (int) Math.floor(Math.sqrt(n));
-		for (int i = 1; i <= n/m+1; i++) {
-			if ((i*m) < n && element <= arr[i*m]) {
-				if (element ==  arr[i*m]) {
-					return i*m+1;
+		for (int i = 1; i <= n / m + 1; i++) {
+			if ((i * m) < n && element <= arr[i * m]) {
+				if (element == arr[i * m]) {
+					return i * m + 1;
 				}
-				for (int j=(i-1)*m; j<Math.min(i*m, n); j++) {
+				for (int j = (i - 1) * m; j < Math.min(i * m, n); j++) {
 					if (arr[j] == element) {
-						return j+1;
+						return j + 1;
 					}
 				}
 			}

@@ -2,7 +2,7 @@ package Algorithms.DynamicProgramming;
 
 public class PartitionProblem {
 	public static void main(String[] args) {
-		int[] arr = {3, 1, 1, 2, 2,1};
+		int[] arr = {3, 1, 1, 2, 2, 1};
 		int n = arr.length;
 		System.out.println(partition(arr, n));
 	}
@@ -33,6 +33,6 @@ public class PartitionProblem {
 				}
 			}
 		}
-		return part[sum/2][n];
+		return part[sum / 2][n];
 	}
 }

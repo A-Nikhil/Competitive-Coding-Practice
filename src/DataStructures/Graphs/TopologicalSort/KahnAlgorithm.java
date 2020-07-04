@@ -42,7 +42,7 @@ public class KahnAlgorithm {
 			return;
 		}
 
-		for (int i: top) {
+		for (int i : top) {
 			System.out.print(i + " ");
 		}
 	}

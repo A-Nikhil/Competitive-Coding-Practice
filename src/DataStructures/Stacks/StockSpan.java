@@ -6,9 +6,9 @@ public class StockSpan {
 	public static void main(String[] args) {
 		int[] price = {10, 4, 5, 90, 120, 80};
 		int[] span = getSpan(price, price.length);
-		System.out.println(span[3-1]);
-		System.out.println(span[4-1]);
-		System.out.println(span[5-1]);
+		System.out.println(span[3 - 1]);
+		System.out.println(span[4 - 1]);
+		System.out.println(span[5 - 1]);
 	}
 
 	private static int[] getSpan(int[] price, int n) {

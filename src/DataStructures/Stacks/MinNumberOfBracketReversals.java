@@ -35,6 +35,6 @@ public class MinNumberOfBracketReversals {
 			}
 			stack.pop();
 		}
-		return len/2+n%2;
+		return len / 2 + n % 2;
 	}
 }
