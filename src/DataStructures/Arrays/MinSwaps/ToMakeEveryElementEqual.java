@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class ToMakeEveryElementEqual {
 	public static void main(String[] args) {
 //		int[] arr = {2, 3, 3, 4};
-		int[] arr = { 1, 2, 3, 4};
+		int[] arr = {1, 2, 3, 4};
 		int n = arr.length;
 		System.out.println(minChanges(arr, n));
 	}
