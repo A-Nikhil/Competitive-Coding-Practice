@@ -3,7 +3,8 @@ package DataStructures.Queues;
 public class PetrolPumpTour {
 	public static void main(String[] args) {
 //		int[][] arr = {{4, 6}, {6, 5}, {7, 3}, {4, 5}};
-		int[][] arr = {{6, 4}, {3, 6}, {7, 3}};
+//		int[][] arr = {{6, 4}, {3, 6}, {7, 3}};
+		int[][] arr = {{3, 3}, {3, 4}, {4, 4}};
 		System.out.println(getTour(arr, arr.length));
 	}
 
@@ -24,6 +25,9 @@ public class PetrolPumpTour {
 				}
 			}
 			start = (start + 1) % n;
+			if (start == 0) {
+				return -1;
+			}
 		}
 		return -1;
 	}

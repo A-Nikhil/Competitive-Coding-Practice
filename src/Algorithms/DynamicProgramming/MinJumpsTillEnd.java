@@ -4,7 +4,9 @@ import java.util.Arrays;
 
 public class MinJumpsTillEnd {
 	public static void main(String[] args) {
-		int[] arr = {1, 3, 6, 1, 0, 9};
+//		int[] arr = {1, 3, 6, 1, 0, 9};
+//		int[] arr = {3, 2, 1, 0, 4};
+		int[] arr = {2, 3, 1, 1, 4};
 		System.out.println(minJump(arr, arr.length));
 	}
 
