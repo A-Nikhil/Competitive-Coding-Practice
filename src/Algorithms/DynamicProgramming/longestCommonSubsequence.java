@@ -4,8 +4,12 @@ public class longestCommonSubsequence {
 	private static int[][] table;
 
 	public static void main(String[] args) {
-		String X = "AGGTAB";
-		String Y = "GXTXAYB";
+//		String X = "AGGTAB";
+//		String Y = "GXTXAYB";
+//		int m = X.length();
+//		int n = Y.length();
+		String X = "ABCDGH";
+		String Y = "ACDGHR";
 		int m = X.length();
 		int n = Y.length();
 		System.out.println(lengthOfLCS(X, Y, m, n));
