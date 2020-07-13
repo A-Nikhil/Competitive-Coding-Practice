@@ -2,15 +2,22 @@ package Algorithms.DynamicProgramming;
 
 public class MinimumCostPath {
 	public static void main(String[] args) {
+//		int[][] cost = {
+//				{1, 2, 3},
+//				{4, 8, 2},
+//				{1, 5, 3}
+//		};
+
 		int[][] cost = {
-				{1, 2, 3},
-				{4, 8, 2},
-				{1, 5, 3}
+				{1, 3, 1},
+				{1, 5, 1},
+				{4, 2, 1}
 		};
-		System.out.println(minimumCostPath(cost, 3, 3));
+		System.out.println(minimumCostPath(cost));
 	}
 
-	private static int minimumCostPath(int[][] arr, int m, int n) {
+	private static int minimumCostPath(int[][] arr) {
+		int m = arr.length, n = arr[0].length;
 		int[][] cost = new int[m + 1][n + 1];
 		int i, j;
 		for (i = 1; i <= m; i++) {
