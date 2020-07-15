@@ -16,27 +16,8 @@ public class FlattenABT {
 	}
 
 	private static void flatten(Node root) {
-		if (root == null) {
-			return;
-		}
-		Stack<Node> stack = new Stack<>();
-		Node newRoot = new Node(root.data);
-		Node end = newRoot;
-		if (root.left != null) {
-			stack.push(root.left);
-		} else {
-			stack.push(root.right);
-		}
-		while (!stack.isEmpty()) {
-			root = stack.pop();
-			end.right = new Node(root.data);
-			end = end.right;
-			if (root.left != null) {
-				stack.push(root.left);
-			} else if (root.right != null) {
-				stack.push(root.right);
-			}
-		}
-		root = newRoot;
+		Node newNode = root;
+		root.left = root.right = null;
+		return;
 	}
 }
