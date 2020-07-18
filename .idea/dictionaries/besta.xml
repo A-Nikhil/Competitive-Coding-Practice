@@ -2,6 +2,7 @@
   <dictionary name="besta">
     <words>
       <w>atleast</w>
+      <w>auxillary</w>
       <w>bitonic</w>
       <w>blocklist</w>
       <w>coeff</w>
@@ -12,6 +13,7 @@
       <w>heapify</w>
       <w>kahn</w>
       <w>kosaraju</w>
+      <w>leet</w>
       <w>llist</w>
       <w>postorder</w>
       <w>prims</w>
