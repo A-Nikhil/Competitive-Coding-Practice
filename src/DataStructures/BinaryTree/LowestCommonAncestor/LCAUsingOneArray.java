@@ -28,6 +28,7 @@ package DataStructures.BinaryTree.LowestCommonAncestor;
 
 import Commons.Node;
 
+@SuppressWarnings("Duplicates")
 public class LCAUsingOneArray {
 	private static Node findLCA(Node root, int n1, int n2) {
 		if (root == null) {
