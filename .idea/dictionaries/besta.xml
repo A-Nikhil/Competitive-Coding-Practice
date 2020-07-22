@@ -10,6 +10,7 @@
       <w>decodings</w>
       <w>delim</w>
       <w>elems</w>
+      <w>gleft</w>
       <w>heapify</w>
       <w>kahn</w>
       <w>kosaraju</w>
@@ -17,6 +18,8 @@
       <w>llist</w>
       <w>postorder</w>
       <w>prims</w>
+      <w>sright</w>
+      <w>subarrays</w>
       <w>succ</w>
       <w>warshall</w>
     </words>
