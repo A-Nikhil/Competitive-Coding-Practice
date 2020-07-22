@@ -29,7 +29,7 @@ public class FileLister {
 						new FileReader(x));
 				writer.println();
 				writer.println();
-				writer.println(x.substring(x.lastIndexOf('\\')+1));
+				writer.println(x.substring(x.lastIndexOf('\\') + 1));
 				writer.println();
 				writer.println();
 				String z = reader1.readLine();

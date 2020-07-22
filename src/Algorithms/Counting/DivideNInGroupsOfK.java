@@ -3,7 +3,7 @@ package Algorithms.Counting;
 import java.util.Arrays;
 
 public class DivideNInGroupsOfK {
-	private static int[][][] dp = new int[500][500][500];
+	private static final int[][][] dp = new int[500][500][500];
 
 	private static int calculate(int pos, int prev, int left, int k) {
 		if (pos == k) {

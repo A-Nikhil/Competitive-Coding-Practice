@@ -19,7 +19,7 @@ public class MajorityElement {
 			n = Integer.parseInt(in.readLine());
 			arr = in.readLine().split(" ");
 			Arrays.sort(arr);
-			for (int i = 0; i < n-1; i++) {
+			for (int i = 0; i < n - 1; i++) {
 				if (arr[i].equals(arr[i + 1])) {
 					count++;
 				} else {

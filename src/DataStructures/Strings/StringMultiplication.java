@@ -28,7 +28,7 @@ public class StringMultiplication {
 			sb.insert(0, mod);
 		}
 
-		while (sb.charAt(0) == '0'	 && sb.length() > 0) {
+		while (sb.charAt(0) == '0' && sb.length() > 0) {
 			sb.deleteCharAt(0);
 		}
 

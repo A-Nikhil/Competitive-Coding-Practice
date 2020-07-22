@@ -1,6 +1,11 @@
 package DataStructures.Strings;
 
 public class Atoi {
+	public static void main(String[] args) {
+		String x = "42";
+		System.out.println(atoi(x));
+	}
+
 	private static int atoi(String s) {
 		char ch;
 		boolean positive = true;
@@ -40,10 +45,5 @@ public class Atoi {
 		} catch (NumberFormatException e) {
 			return Integer.MIN_VALUE;
 		}
-	}
-
-	public static void main(String[] args) {
-		String x = "42";
-		System.out.println(atoi(x));
 	}
 }

@@ -2,9 +2,12 @@
 
 package DataStructures.Arrays.Misc;
 
-import java.util.ArrayList;
-
 public class ContainerWithMostWater {
+	public static void main(String[] args) {
+		int[] arr = {1, 8, 4, 5, 6, 7, 4};
+		System.out.println(maxArea(arr));
+	}
+
 	private static int maxArea(int[] arr) {
 		int max = 0, curr, left = 0, right = arr.length - 1;
 		while (left <= right) {
@@ -17,10 +20,5 @@ public class ContainerWithMostWater {
 			}
 		}
 		return max;
-	}
-
-	public static void main(String[] args) {
-		int[] arr = {1, 8, 4, 5, 6, 7, 4};
-		System.out.println(maxArea(arr));
 	}
 }

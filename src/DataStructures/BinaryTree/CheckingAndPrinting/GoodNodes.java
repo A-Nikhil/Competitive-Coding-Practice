@@ -31,6 +31,6 @@ public class GoodNodes {
 
 	public static void main(String[] args) {
 		Node root = new Node(3);
-		
+
 	}
 }

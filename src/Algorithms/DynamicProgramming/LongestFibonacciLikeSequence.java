@@ -23,7 +23,7 @@ public class LongestFibonacciLikeSequence {
 				x = A[j];
 				y = A[i] + A[j];
 				len = 2;
-				while (set.contains(y) ) {
+				while (set.contains(y)) {
 					int z = x + y;
 					x = y;
 					y = z;

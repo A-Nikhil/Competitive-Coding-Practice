@@ -3,6 +3,11 @@
 package Algorithms.DynamicProgramming;
 
 public class UniquePaths {
+	public static void main(String[] args) {
+		int m = 3, n = 2;
+		System.out.println(uniquePath(m, n));
+	}
+
 	private static int uniquePath(int m, int n) {
 		if (m == 0 || n == 0) {
 			return 0;
@@ -24,10 +29,5 @@ public class UniquePaths {
 			}
 		}
 		return dp[m - 1][n - 1];
-	}
-
-	public static void main(String[] args) {
-		int m =3, n=2;
-		System.out.println(uniquePath(m, n));
 	}
 }

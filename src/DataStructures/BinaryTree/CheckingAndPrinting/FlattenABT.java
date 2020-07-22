@@ -2,8 +2,6 @@ package DataStructures.BinaryTree.CheckingAndPrinting;
 
 import Commons.Node;
 
-import java.util.Stack;
-
 public class FlattenABT {
 	public static void main(String[] args) {
 		Node root = new Node(1);
