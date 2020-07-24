@@ -17,8 +17,8 @@ public class ArrayPrinter {
 		}
 	}
 
-	public void printArray(String[] arr, int end) {
-		for (int i = 0; i < end; i++) {
+	public void printArray(String[] arr) {
+		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + " ");
 		}
 	}

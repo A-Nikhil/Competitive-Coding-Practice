@@ -5,7 +5,7 @@ import Commons.ArrayPrinter;
 public class MagicTriplets {
 	public static void main(String[] args) {
 //		int[] arr = {7, 3, 4, 3, 3, 1};
-		int[] arr = {3,2,1};
+		int[] arr = {3, 2, 1};
 		System.out.println(findTriplets(arr));
 	}
 

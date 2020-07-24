@@ -21,7 +21,7 @@ public class AvoidFloods {
 		int[] result = new int[rains.length];
 		HashMap<Integer, Integer> lakes = new HashMap<>();
 		TreeSet<Integer> noRain = new TreeSet<>();
-		for (int i = 0; i<rains.length; i++) {
+		for (int i = 0; i < rains.length; i++) {
 			if (rains[i] == 0) {
 				noRain.add(i);
 			} else {
