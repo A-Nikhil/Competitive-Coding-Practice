@@ -31,7 +31,7 @@ public class MaximumLeafToRootPath {
 			return;
 		}
 
-		currentSum = currentSum + root.data;
+		currentSum = currentSum + root.val;
 
 		if (root.left == null && root.right == null) {
 			if (currentSum > result) {
@@ -52,7 +52,7 @@ public class MaximumLeafToRootPath {
 		if (root == target ||
 				printPath(root.left, target) ||
 				printPath(root.right, target)) {
-			System.out.print(root.data + " ");
+			System.out.print(root.val + " ");
 			return true;
 		}
 

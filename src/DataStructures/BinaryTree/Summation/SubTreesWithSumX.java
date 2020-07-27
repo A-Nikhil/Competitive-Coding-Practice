@@ -70,7 +70,7 @@ public class SubTreesWithSumX {
 
 		int ls = utilFunction(root.left, x),
 				rs = utilFunction(root.right, x);
-		int sum = ls + rs + root.data;
+		int sum = ls + rs + root.val;
 		if (sum == x) {
 			count++;
 		}
@@ -88,7 +88,7 @@ public class SubTreesWithSumX {
 				rs = utilFunction(root.right, x);
 
 
-		if ((ls + rs + root.data) == x) {
+		if ((ls + rs + root.val) == x) {
 			count++;
 		}
 

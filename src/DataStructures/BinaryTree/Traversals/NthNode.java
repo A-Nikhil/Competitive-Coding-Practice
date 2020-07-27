@@ -30,7 +30,7 @@ public class NthNode {
 		inOrderTraversal(root.left, n);
 		position++;
 		if (position == n) {
-			return root.data;
+			return root.val;
 		}
 		inOrderTraversal(root.right, n);
 		return -1;

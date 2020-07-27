@@ -33,7 +33,7 @@ public class ReplaceWithLeastGreatestOnRight {
 			return;
 		}
 		inorder(root.left);
-		list.add(root.data);
+		list.add(root.val);
 		inorder(root.right);
 	}
 

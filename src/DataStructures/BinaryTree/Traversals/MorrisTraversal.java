@@ -40,7 +40,7 @@ public class MorrisTraversal {
 		current = root;
 		while (current != null) {
 			if (current.left == null) {
-				System.out.print(current.data + " ");
+				System.out.print(current.val + " ");
 				current = current.right;
 			} else {
 				temp = current.left;
@@ -57,7 +57,7 @@ public class MorrisTraversal {
 					/* Revert the changes made in the 'if' part to restore the
                     original tree i.e., fix the right child of predecessor*/
 					temp.right = null;
-					System.out.print(current.data + " ");
+					System.out.print(current.val + " ");
 					current = current.right;
 				}
 			}

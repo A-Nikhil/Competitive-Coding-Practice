@@ -29,7 +29,7 @@ public class RootToLeafPath {
 		if (root == null) {
 			return;
 		}
-		path[pathLength] = root.data;
+		path[pathLength] = root.val;
 		pathLength++;
 		if (root.left == null && root.right == null) {
 			for (int i = 0; i < pathLength; i++) {

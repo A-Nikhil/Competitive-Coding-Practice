@@ -29,15 +29,15 @@ public class MaxDifferenceBetweenNodeAndAncestor {
 
 		// Return leaf node if encountered
 		if (root.left == null && root.right == null) {
-			return root.data;
+			return root.val;
 		}
 
 		int value = Math.min(findMinimum(root.left, small),
 				findMinimum(root.right, small));
 
-		small.var = Math.max(small.var, root.data - value);
+		small.var = Math.max(small.var, root.val - value);
 
-		return Math.min(value, root.data);
+		return Math.min(value, root.val);
 	}
 
 	private static int getMaxDifference(Node root) {

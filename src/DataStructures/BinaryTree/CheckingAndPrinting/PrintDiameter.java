@@ -55,7 +55,7 @@ public class PrintDiameter {
 			return;
 		}
 
-		path[pathLength] = root.data;
+		path[pathLength] = root.val;
 		pathLength++;
 
 		if (root.left == null && root.right == null) {

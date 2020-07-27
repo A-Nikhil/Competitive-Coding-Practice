@@ -22,11 +22,11 @@ import Commons.Node;
 
 public class ShortestDistanceBetweenNodes {
 	private static int distance(Node root, int element) {
-		if (root == null || root.data == element) {
+		if (root == null || root.val == element) {
 			return 0;
 		}
 
-		if (root.data > element) {
+		if (root.val > element) {
 			return 1 + distance(root.left, element);
 		} else {
 			return 1 + distance(root.right, element);
@@ -38,15 +38,15 @@ public class ShortestDistanceBetweenNodes {
 			return 0;
 		}
 
-		if (n1 > root.data && n2 > root.data) {
+		if (n1 > root.val && n2 > root.val) {
 			return getShortestDistance(root.right, n1, n2);
 		}
 
-		if (n1 < root.data && n2 < root.data) {
+		if (n1 < root.val && n2 < root.val) {
 			return getShortestDistance(root.left, n1, n2);
 		}
 
-		if (n1 <= root.data && n2 >= root.data) {
+		if (n1 <= root.val && n2 >= root.val) {
 			return distance(root, n1) +
 					distance(root, n2);
 		}

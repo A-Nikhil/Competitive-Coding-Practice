@@ -17,7 +17,7 @@ public class DistanceBetweenNodes {
 		if (root == null) {
 			return 0;
 		}
-		if (root.data == element) {
+		if (root.val == element) {
 			return level;
 		}
 		int left = findLevelFromRoot(root.left, element, level + 1);
@@ -32,7 +32,7 @@ public class DistanceBetweenNodes {
 			return null;
 		}
 
-		if (root.data == n1 || root.data == n2) {
+		if (root.val == n1 || root.val == n2) {
 			return root;
 		}
 		Node left = findLCA(root.left, n1, n2);

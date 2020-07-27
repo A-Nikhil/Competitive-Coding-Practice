@@ -30,10 +30,10 @@ public class InorderSuccessor {
 
 		Node succ = null;
 		while (node != null) {
-			if (element.data < node.data) {
+			if (element.val < node.val) {
 				succ = node;
 				node = node.left;
-			} else if (element.data > node.data) {
+			} else if (element.val > node.val) {
 				node = node.right;
 			} else {
 				break;
@@ -46,7 +46,7 @@ public class InorderSuccessor {
 		if (node == null) {
 			return null;
 		}
-		if (min.data > node.data) {
+		if (min.val > node.val) {
 			min = node;
 		}
 		findMinimum(node.left);
@@ -66,6 +66,6 @@ public class InorderSuccessor {
 		tree.insert(root, 10);
 		tree.insert(root, 14);
 		Node n = root.left.right.right;
-		System.out.println(findSuccessor(root, n).data);
+		System.out.println(findSuccessor(root, n).val);
 	}
 }

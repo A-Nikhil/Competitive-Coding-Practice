@@ -25,7 +25,7 @@ import java.util.HashSet;
 public class PairSumEqualToRoot {
 	private static boolean doesPairExist(Node root) {
 		HashSet<Integer> map = new HashSet<>();
-		return pairCheck(root, map, root.data);
+		return pairCheck(root, map, root.val);
 	}
 
 	private static boolean pairCheck(Node root, HashSet<Integer> map, int rootData) {
@@ -33,16 +33,16 @@ public class PairSumEqualToRoot {
 			return true;
 		}
 
-		if (map.contains(rootData - root.data)) {
+		if (map.contains(rootData - root.val)) {
 			return true;
 		}
 
-		map.add(root.data);
+		map.add(root.val);
 
 		boolean result = pairCheck(root.left, map, rootData)
 				|| pairCheck(root.left, map, rootData);
 
-		map.remove(root.data);
+		map.remove(root.val);
 
 		return result;
 	}

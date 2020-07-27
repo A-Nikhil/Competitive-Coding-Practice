@@ -20,12 +20,12 @@ public class ChildSumProperty {
 			return true;
 		}
 		if (root.left != null) {
-			sum += root.left.data;
+			sum += root.left.val;
 		}
 		if (root.right != null) {
-			sum += root.right.data;
+			sum += root.right.val;
 		}
-		return (sum == root.data) &&
+		return (sum == root.val) &&
 				childSum(root.left) &&
 				childSum(root.right);
 	}

@@ -50,9 +50,9 @@ public class VerticalSum {
 		getHorizontalDistances(root.left, hDist - 1, doSum);
 		if (doSum) {
 			if (hDist >= 0) {
-				arr[hDist] += root.data;
+				arr[hDist] += root.val;
 			} else {
-				arr[arr.length + hDist] += root.data;
+				arr[arr.length + hDist] += root.val;
 			}
 		} else {
 			hd.put(root, hDist);

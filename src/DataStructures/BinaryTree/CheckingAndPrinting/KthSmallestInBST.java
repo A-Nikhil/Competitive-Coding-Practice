@@ -25,7 +25,7 @@ public class KthSmallestInBST {
 		helper(root.left, k);
 		count++;
 		if (count == k && !found) {
-			kth = root.data;
+			kth = root.val;
 			found = true;
 			return;
 		}

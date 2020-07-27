@@ -35,7 +35,7 @@ public class LCAUsingOneArray {
 			return null;
 		}
 
-		if (root.data == n1 || root.data == n2) {
+		if (root.val == n1 || root.val == n2) {
 			return root;
 		}
 
@@ -66,12 +66,12 @@ public class LCAUsingOneArray {
 		root.right.left = new Node(6);
 		root.right.right = new Node(7);
 		System.out.println("LCA(4, 5) = " +
-				findLCA(root, 4, 5).data);
+				findLCA(root, 4, 5).val);
 		System.out.println("LCA(4, 6) = " +
-				findLCA(root, 4, 6).data);
+				findLCA(root, 4, 6).val);
 		System.out.println("LCA(3, 4) = " +
-				findLCA(root, 3, 4).data);
+				findLCA(root, 3, 4).val);
 		System.out.println("LCA(2, 4) = " +
-				findLCA(root, 2, 4).data);
+				findLCA(root, 2, 4).val);
 	}
 }

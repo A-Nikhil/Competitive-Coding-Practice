@@ -38,19 +38,19 @@ public class BinarySumTree {
 		if (isSumTree(root.left) && isSumTree(root.right)) {
 			if (root.left != null) {
 				if (isLeaf(root.left)) {
-					left = root.left.data;
+					left = root.left.val;
 				} else {
-					left = 2 * root.left.data;
+					left = 2 * root.left.val;
 				}
 			}
 			if (root.right != null) {
 				if (isLeaf(root.right)) {
-					right = root.right.data;
+					right = root.right.val;
 				} else {
-					right = 2 * root.right.data;
+					right = 2 * root.right.val;
 				}
 			}
-			return (root.data == (left + right));
+			return (root.val == (left + right));
 		}
 		return false;
 	}

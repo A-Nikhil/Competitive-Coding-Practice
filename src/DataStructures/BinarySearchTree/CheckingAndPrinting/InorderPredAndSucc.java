@@ -12,11 +12,11 @@ public class InorderPredAndSucc {
 			return;
 		}
 		if (findMax) {
-			if (node.data > max.data) {
+			if (node.val > max.val) {
 				max = node;
 			}
 		} else {
-			if (node.data < min.data) {
+			if (node.val < min.val) {
 				min = node;
 			}
 		}
@@ -29,7 +29,7 @@ public class InorderPredAndSucc {
 			return;
 		}
 
-		if (root.data == element) {
+		if (root.val == element) {
 			if (root.left != null) {
 				max = new Node(Integer.MIN_VALUE);
 				findLimit(root.left, true);
@@ -41,7 +41,7 @@ public class InorderPredAndSucc {
 			return;
 		}
 
-		if (root.data > element) {
+		if (root.val > element) {
 			min = root;
 			findPredAndSucc(root.left, element);
 		} else {
@@ -63,7 +63,7 @@ public class InorderPredAndSucc {
 		tree.insert(root, 14);
 		int n = 10;
 		findPredAndSucc(root, n);
-		System.out.println("pred => " + max.data);
-		System.out.println("succ => " + min.data);
+		System.out.println("pred => " + max.val);
+		System.out.println("succ => " + min.val);
 	}
 }

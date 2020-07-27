@@ -22,7 +22,7 @@ public class MaxPathSum {
 			return 0;
 		}
 		if (root.left == null && root.right == null) {
-			return root.data;
+			return root.val;
 		}
 
 		// Find maximum sum in left and right subtree. Also
@@ -33,13 +33,13 @@ public class MaxPathSum {
 
 		// If both left and right children exist
 		if (root.left != null && root.right != null) {
-			result = Math.max(result, ls + rs + root.data);
-			return Math.max(ls, rs) + root.data;
+			result = Math.max(result, ls + rs + root.val);
+			return Math.max(ls, rs) + root.val;
 		}
 
 		// If any of the two children is empty, return
 		// root sum for root being on one side
-		return (root.left == null) ? rs + root.data : ls + root.data;
+		return (root.left == null) ? rs + root.val : ls + root.val;
 	}
 
 	private static int maxPathSum(Node root) {

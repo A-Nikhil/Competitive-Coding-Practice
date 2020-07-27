@@ -24,7 +24,7 @@ public class SpiralLevelOrder {
 		while (!s1.isEmpty() || !s2.isEmpty()) {
 			while (!s1.isEmpty()) {
 				root = s1.pop();
-				System.out.print(root.data + " ");
+				System.out.print(root.val + " ");
 				if (root.right != null) {
 					s2.push(root.right);
 				}
@@ -35,7 +35,7 @@ public class SpiralLevelOrder {
 
 			while (!s2.isEmpty()) {
 				root = s2.pop();
-				System.out.print(root.data + " ");
+				System.out.print(root.val + " ");
 				if (root.right != null) {
 					s1.push(root.right);
 				}

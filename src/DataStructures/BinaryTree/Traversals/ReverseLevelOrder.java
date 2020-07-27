@@ -37,7 +37,7 @@ public class ReverseLevelOrder {
 		queue.add(tempNode);
 		while (!queue.isEmpty()) {
 			tempNode = queue.poll();
-			stack.add(tempNode.data);
+			stack.add(tempNode.val);
 			if (tempNode.right != null) {
 				queue.add(tempNode.right);
 			}

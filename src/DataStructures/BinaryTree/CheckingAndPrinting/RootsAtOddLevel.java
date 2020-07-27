@@ -25,7 +25,7 @@ public class RootsAtOddLevel {
 			return;
 		}
 		if (isOdd) {
-			System.out.print(root.data + " ");
+			System.out.print(root.val + " ");
 		}
 		if (root.left != null) {
 			nodePrinter(root.left, !isOdd);

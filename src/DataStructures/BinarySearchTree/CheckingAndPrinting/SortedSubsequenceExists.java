@@ -23,7 +23,7 @@ public class SortedSubsequenceExists {
 			return;
 		}
 		traverseAndCheck(root.left, arr, index);
-		if (root.data == arr[index.var]) {
+		if (root.val == arr[index.var]) {
 			index.var++;
 		}
 		traverseAndCheck(root.right, arr, index);

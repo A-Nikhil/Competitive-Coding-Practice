@@ -30,12 +30,12 @@ public class AncestorsOfABinaryTree {
 
 			// Traverse the left side. While traversing, push the nodes into
 			// the stack so that their right subtrees can be traversed later
-			while (root != null && root.data != key) {
+			while (root != null && root.val != key) {
 				stack.push(root);
 				root = root.left;
 			}
 
-			if (root != null && root.data == key) {
+			if (root != null && root.val == key) {
 				break;
 			}
 
@@ -54,7 +54,7 @@ public class AncestorsOfABinaryTree {
 		}
 
 		while (!stack.isEmpty()) {
-			System.out.print(stack.pop().data + " ");
+			System.out.print(stack.pop().val + " ");
 		}
 	}
 }

@@ -65,10 +65,10 @@ public class RemovingPathsLessThanK {
 		if (root == null) {
 			return null;
 		}
-		root.left = prune(root.left, sum - root.data);
-		root.right = prune(root.right, sum - root.data);
+		root.left = prune(root.left, sum - root.val);
+		root.right = prune(root.right, sum - root.val);
 		if (root.left == null && root.right == null) {
-			if (sum > root.data) {
+			if (sum > root.val) {
 				root = null;
 			}
 		}
@@ -81,7 +81,7 @@ public class RemovingPathsLessThanK {
 			return;
 		}
 		printInorder(root.left);
-		System.out.print(root.data + " ");
+		System.out.print(root.val + " ");
 		printInorder(root.right);
 	}
 

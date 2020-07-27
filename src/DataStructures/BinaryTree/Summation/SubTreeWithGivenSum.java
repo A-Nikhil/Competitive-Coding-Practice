@@ -24,7 +24,7 @@ public class SubTreeWithGivenSum {
 		GlobalVar sumLeft = new GlobalVar(0),
 				sumRight = new GlobalVar(0);
 
-		currentSum.var = sumLeft.var + sumRight.var + root.data;
+		currentSum.var = sumLeft.var + sumRight.var + root.val;
 
 		return (check(root.left, sumLeft, x) ||
 				check(root.right, sumRight, x) ||

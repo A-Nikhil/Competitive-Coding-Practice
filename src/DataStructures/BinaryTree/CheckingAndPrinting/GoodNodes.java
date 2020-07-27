@@ -21,12 +21,12 @@ public class GoodNodes {
 			return;
 		}
 
-		if (root.data >= max) {
+		if (root.val >= max) {
 			count++;
 		}
 
-		helper(root.left, Math.max(max, root.data));
-		helper(root.right, Math.max(max, root.data));
+		helper(root.left, Math.max(max, root.val));
+		helper(root.right, Math.max(max, root.val));
 	}
 
 	public static void main(String[] args) {

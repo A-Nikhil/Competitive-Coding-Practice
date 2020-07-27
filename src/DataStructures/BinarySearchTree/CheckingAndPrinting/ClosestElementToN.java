@@ -23,14 +23,14 @@ public class ClosestElementToN {
 			return -1;
 		}
 
-		if (root.data <= N &&
-				(root.right == null || root.right.data > N)) {
-			return root.data;
+		if (root.val <= N &&
+				(root.right == null || root.right.val > N)) {
+			return root.val;
 		}
 
-		if (root.data > N) {
+		if (root.val > N) {
 			return findElement(root.left, N);
-		} else if (root.data < N) {
+		} else if (root.val < N) {
 			return findElement(root.right, N);
 		}
 

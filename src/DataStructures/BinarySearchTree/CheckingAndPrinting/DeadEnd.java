@@ -52,8 +52,8 @@ public class DeadEnd {
 			return true;
 		}
 
-		return deadEndExists(root.left, min, root.data - 1)
-				|| deadEndExists(root.right, root.data + 1, max);
+		return deadEndExists(root.left, min, root.val - 1)
+				|| deadEndExists(root.right, root.val + 1, max);
 	}
 
 	public static void main(String[] args) {

@@ -61,9 +61,9 @@ public class ReplacementWithInorderNeighbor {
 
 		doInorder(root.left, replace);
 		if (replace) {
-			root.data = arr[i - 1] + arr[i + 1];
+			root.val = arr[i - 1] + arr[i + 1];
 		} else {
-			arr[i] = root.data;
+			arr[i] = root.val;
 		}
 		i++;
 		doInorder(root.right, replace);

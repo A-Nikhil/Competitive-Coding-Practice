@@ -42,7 +42,7 @@ public class MaxSumAtCurrentLevel {
 			while (count > 0) {
 				root = queue.poll();
 				if (root != null) {
-					currSum += root.data;
+					currSum += root.val;
 					if (root.left != null) {
 						queue.add(root.left);
 					}

@@ -47,9 +47,9 @@ public class SumOfParentsOfX {
 			return;
 		}
 
-		if ((root.left != null && root.left.data == x) ||
-				(root.right != null && root.right.data == x)) {
-			sum += root.data;
+		if ((root.left != null && root.left.val == x) ||
+				(root.right != null && root.right.val == x)) {
+			sum += root.val;
 		}
 
 		sumOfParentsX(root.left, x);

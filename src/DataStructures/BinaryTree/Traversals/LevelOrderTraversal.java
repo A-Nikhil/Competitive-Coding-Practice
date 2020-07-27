@@ -43,7 +43,7 @@ public class LevelOrderTraversal {
 		queue.add(tempNode);
 		while (!queue.isEmpty()) {
 			tempNode = queue.poll();
-			System.out.print(tempNode.data + " ");
+			System.out.print(tempNode.val + " ");
 			if (tempNode.left != null) {
 				queue.add(tempNode.left);
 			}

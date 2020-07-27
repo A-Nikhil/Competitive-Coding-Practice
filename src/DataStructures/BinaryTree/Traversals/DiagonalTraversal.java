@@ -22,12 +22,12 @@ public class DiagonalTraversal {
 
 		// Check if a arraylist exists at a particular slope
 		if (traversal.containsKey(slope)) {
-			traversal.get(slope).add(root.data);
+			traversal.get(slope).add(root.val);
 		} else {
 			// if does not exist, create one
 			traversal.put(slope, new ArrayList<>());
-			if (!traversal.get(slope).contains(root.data)) {
-				traversal.get(slope).add(root.data);
+			if (!traversal.get(slope).contains(root.val)) {
+				traversal.get(slope).add(root.val);
 			}
 		}
 

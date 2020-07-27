@@ -35,26 +35,26 @@ public class AncestorMatrix {
 		ancestorMatrix(root.right, matrix, size);
 
 		if (root.left != null) {
-			matrix[root.data][root.left.data] = 1;
+			matrix[root.val][root.left.val] = 1;
 
 			// iterate through all the columns of children node
 			// all nodes which are children to
 			// children of root node will also
 			// be children of root node
 			for (int i = 0; i < size; i++) {
-				if (matrix[root.left.data][i] == 1) {
-					matrix[root.data][i] = 1;
+				if (matrix[root.left.val][i] == 1) {
+					matrix[root.val][i] = 1;
 				}
 			}
 		}
 
 		// same procedure followed for right node as well
 		if (root.right != null) {
-			matrix[root.data][root.right.data] = 1;
+			matrix[root.val][root.right.val] = 1;
 
 			for (int i = 0; i < size; i++) {
-				if (matrix[root.right.data][i] == 1)
-					matrix[root.data][i] = 1;
+				if (matrix[root.right.val][i] == 1)
+					matrix[root.val][i] = 1;
 			}
 		}
 	}

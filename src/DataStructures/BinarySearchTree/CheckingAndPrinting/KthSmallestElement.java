@@ -39,7 +39,7 @@ public class KthSmallestElement {
 			if (current.left == null) {
 				count++;
 				if (count == k) {
-					kSmall = current.data;
+					kSmall = current.val;
 				}
 				current = current.right;
 			} else {
@@ -55,7 +55,7 @@ public class KthSmallestElement {
 					pre.right = null;
 					count++;
 					if (count == k) {
-						kSmall = current.data;
+						kSmall = current.val;
 					}
 					current = current.right;
 				}

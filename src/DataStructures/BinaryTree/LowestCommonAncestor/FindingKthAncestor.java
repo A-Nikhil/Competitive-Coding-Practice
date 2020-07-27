@@ -10,13 +10,13 @@ public class FindingKthAncestor {
 			return null;
 		}
 
-		if (root.data == element ||
+		if (root.val == element ||
 				kThAncestorDFS(root.left, element) != null ||
 				kThAncestorDFS(root.right, element) != null) {
 			if (k > 0) {
 				k--;
 			} else if (k == 0) {
-				System.out.println(root.data);
+				System.out.println(root.val);
 				return null;
 			}
 			return root;

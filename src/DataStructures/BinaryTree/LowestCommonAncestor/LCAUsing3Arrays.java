@@ -20,7 +20,7 @@ public class LCAUsing3Arrays {
 			return true;
 		}
 
-		int current = root.data;
+		int current = root.val;
 		if (root.left != null && traversal(root.left, data, one)) {
 			if (one) {
 				if (!node1path.contains(current)) {
@@ -47,7 +47,7 @@ public class LCAUsing3Arrays {
 			return true;
 		}
 
-		return root.data == data;
+		return root.val == data;
 	}
 
 	private static int findLCA(Node root, int n1, int n2) {

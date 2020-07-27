@@ -20,14 +20,14 @@ public class BinaryTreeIsBST {
 			return true;
 		}
 
-		if (root.data < min || root.data > max) {
+		if (root.val < min || root.val > max) {
 			return false;
 		}
 
 		// if left => min = min, max = current data-1
 		// if right => min = current data+1, max = max
-		return traverseBST(root.left, min, root.data - 1)
-				&& traverseBST(root.right, root.data + 1, max);
+		return traverseBST(root.left, min, root.val - 1)
+				&& traverseBST(root.right, root.val + 1, max);
 	}
 
 	public static void main(String[] args) {

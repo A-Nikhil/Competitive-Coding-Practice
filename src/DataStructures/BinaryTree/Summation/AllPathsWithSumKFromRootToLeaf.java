@@ -13,8 +13,8 @@ public class AllPathsWithSumKFromRootToLeaf {
 			return result;
 		}
 		List<Integer> list = new ArrayList<>();
-		list.add(root.data);
-		getPaths(list, root, sum - root.data);
+		list.add(root.val);
+		getPaths(list, root, sum - root.val);
 		return result;
 	}
 
@@ -28,14 +28,14 @@ public class AllPathsWithSumKFromRootToLeaf {
 		}
 
 		if (root.left != null) {
-			list.add(root.left.data);
-			getPaths(list, root.left, sum - root.left.data);
+			list.add(root.left.val);
+			getPaths(list, root.left, sum - root.left.val);
 			list.remove(list.size() - 1);
 		}
 
 		if (root.right != null) {
-			list.add(root.right.data);
-			getPaths(list, root.right, sum - root.right.data);
+			list.add(root.right.val);
+			getPaths(list, root.right, sum - root.right.val);
 			list.remove(list.size() - 1);
 		}
 	}

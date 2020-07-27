@@ -86,7 +86,7 @@ public class PrintingTreeIterative {
 
 		while (!stack.isEmpty()) {
 			root = stack.pop();
-			System.out.print(root.data + " => ");
+			System.out.print(root.val + " => ");
 		}
 		System.out.println();
 	}

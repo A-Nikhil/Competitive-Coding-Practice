@@ -52,7 +52,7 @@ public class sumOfDiagonals {
 
 			while (current.root != null) {
 				int prevSum = (diagonalSum.get(vd) == null) ? 0 : diagonalSum.get(vd);
-				diagonalSum.put(vd, prevSum + current.root.data);
+				diagonalSum.put(vd, prevSum + current.root.val);
 
 				if (current.root.left != null) {
 					queue.add(new VerticalDistance(current.root.left, vd + 1));

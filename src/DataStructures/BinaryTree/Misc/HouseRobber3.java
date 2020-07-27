@@ -24,7 +24,7 @@ public class HouseRobber3 {
 		int[] right = helper(root.right);
 
 		// result[0] is when root is selected, result[1] is when not.
-		result[0] = root.data + left[1] + right[1];
+		result[0] = root.val + left[1] + right[1];
 		result[1] = Math.max(left[0], left[1]) + Math.max(right[0], right[1]);
 		return result;
 	}

@@ -60,7 +60,7 @@ public class SumOfKSmallestElements {
 			return;
 		}
 		inorderTraversal(root.left);
-		list.add(root.data);
+		list.add(root.val);
 		inorderTraversal(root.right);
 	}
 }

@@ -18,7 +18,7 @@ public class UncoveredAndCovered {
 		if (root == null) {
 			return 0;
 		} else {
-			return root.data + totalSum(root.left) + totalSum(root.right);
+			return root.val + totalSum(root.left) + totalSum(root.right);
 		}
 	}
 
@@ -27,9 +27,9 @@ public class UncoveredAndCovered {
 			return 0;
 		}
 		if (root.left != null) {
-			return root.data + uncoveredSumLeft(root.left);
+			return root.val + uncoveredSumLeft(root.left);
 		} else {
-			return root.data + uncoveredSumLeft(root.right);
+			return root.val + uncoveredSumLeft(root.right);
 		}
 	}
 
@@ -38,14 +38,14 @@ public class UncoveredAndCovered {
 			return 0;
 		}
 		if (root.right != null) {
-			return root.data + uncoveredSumRight(root.right);
+			return root.val + uncoveredSumRight(root.right);
 		} else {
-			return root.data + uncoveredSumRight(root.left);
+			return root.val + uncoveredSumRight(root.left);
 		}
 	}
 
 	private static boolean checkCoverage(Node root) {
-		int uncovered = root.data;
+		int uncovered = root.val;
 		if (root.left != null) {
 			uncovered += uncoveredSumLeft(root.left);
 		}

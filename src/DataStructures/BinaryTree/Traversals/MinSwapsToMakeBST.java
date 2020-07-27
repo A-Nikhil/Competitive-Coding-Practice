@@ -25,7 +25,7 @@ public class MinSwapsToMakeBST {
 			return;
 		}
 		inOrderTraversal(root.left);
-		inOrder[index] = root.data;
+		inOrder[index] = root.val;
 		index++;
 		inOrderTraversal(root.right);
 	}

@@ -49,7 +49,7 @@ public class MaxSubTreeSum {
 		int ls = getSum(root.left),
 				rs = getSum(root.right);
 
-		int currentNodeSum = ls + rs + root.data;
+		int currentNodeSum = ls + rs + root.val;
 
 		if (currentNodeSum > sum) {
 			sum = currentNodeSum;

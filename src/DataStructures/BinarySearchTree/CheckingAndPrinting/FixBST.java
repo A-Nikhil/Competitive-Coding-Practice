@@ -32,11 +32,11 @@ public class FixBST {
 		root.left = fixBST(root.left, min, max);
 		root.right = fixBST(root.right, min, max);
 
-		if (root.data < min) {
+		if (root.val < min) {
 			root = root.right;
 		}
 
-		if (root.data > max) {
+		if (root.val > max) {
 			root = root.left;
 		}
 
