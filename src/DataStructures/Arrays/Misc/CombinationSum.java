@@ -1,7 +1,10 @@
+// https://leetcode.com/problems/combination-sum-ii/
+
 package DataStructures.Arrays.Misc;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class CombinationSum {
     public List<List<Integer>> result;
@@ -11,15 +14,15 @@ public class CombinationSum {
         if (candidates.length == 0) {
             return result;
         }
-        System.out.println("Hello");
+        Arrays.sort(candidates);
         List<Integer> current = new ArrayList<>();
-        for (int i = 0; i < candidates.length; i++) {
-            backtrack(candidates, target, i, current);
-        }
+
+        backtrack(candidates, target, 0, current);
+
         return result;
     }
 
-    public void backtrack(int[] candidates, int target, int i, List<Integer> current) {
+    public void backtrack(int[] candidates, int target, int start, List<Integer> current) {
         if (target < 0) {
             return;
         }
@@ -29,15 +32,14 @@ public class CombinationSum {
             return;
         }
 
-        if (i >= candidates.length) {
-            return;
-        }
-
-        if (candidates[i] <= target) {
-            System.out.println(candidates[i]);
-            current.add(candidates[i]);
-            backtrack(candidates, target - candidates[i], i + 1, current);
-            current.remove(current.size() - 1);
+        int prev = -1;
+        for (int i = start; i < candidates.length; i++) {
+            if (prev != candidates[i]) {
+                current.add(candidates[i]);
+                backtrack(candidates, target - candidates[i], i + 1, current);
+                current.remove(current.size() - 1);
+                prev = candidates[i];
+            }
         }
     }
 
