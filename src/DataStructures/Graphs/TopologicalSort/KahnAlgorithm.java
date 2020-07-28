@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
+@SuppressWarnings("unchecked")
 public class KahnAlgorithm {
 	public static void main(String[] args) {
-
+		int V = 0;
+		ArrayList<Integer>[] graph = new ArrayList[V];
+		kahnTopologicalSort(graph, V);
 	}
 
 	private static void kahnTopologicalSort(ArrayList<Integer>[] graph, int V) {

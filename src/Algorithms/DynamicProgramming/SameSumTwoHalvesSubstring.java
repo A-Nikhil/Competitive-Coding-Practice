@@ -8,7 +8,7 @@ public class SameSumTwoHalvesSubstring {
 
 	private static int findLength(String str, int n) {
 		int[] sum = new int[n + 1];
-		int ans = 0, i, j, len;
+		int ans = 0, i, len;
 		sum[0] = 0;
 		for (i = 1; i <= n; i++) {
 			sum[i] = sum[i - 1] + (str.charAt(i - 1) - '0');

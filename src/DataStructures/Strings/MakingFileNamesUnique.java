@@ -17,7 +17,7 @@ public class MakingFileNamesUnique {
 			return new String[0];
 		}
 		HashMap<String, Integer> map = new HashMap<>();
-		String x, tempName;
+		String tempName;
 		int suffix;
 		String[] result = new String[names.length];
 		for (int i = 0; i < names.length; i++) {

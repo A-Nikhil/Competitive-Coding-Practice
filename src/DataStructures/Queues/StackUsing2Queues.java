@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class StackUsing2Queues {
 	public static void main(String[] args) {
-		MyStack obj = new MyStack();
+		// MyStack obj = new MyStack();
 	}
 
 	static class MyStack {

@@ -7,7 +7,7 @@ public class SortAnArrayTillN_NaturalNumbers {
 	}
 
 	private static int minSwaps(int[] arr, int n) {
-		int count = 0, x, y;
+		int count = 0, x;
 		for (int i = 0; i < n; i++) {
 			while (arr[i] != i + 1) {
 				x = arr[arr[i] - 1];

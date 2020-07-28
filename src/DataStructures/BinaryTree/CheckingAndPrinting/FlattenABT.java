@@ -14,7 +14,6 @@ public class FlattenABT {
 	}
 
 	private static void flatten(Node root) {
-		Node newNode = root;
 		root.left = root.right = null;
 		return;
 	}

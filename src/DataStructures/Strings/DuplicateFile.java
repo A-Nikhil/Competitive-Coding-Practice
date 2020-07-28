@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("unused")
 public class DuplicateFile {
 	private static List<List<String>> findDuplicate(String[] paths) {
 		List<List<String>> result = new ArrayList<>();
