@@ -9,29 +9,34 @@ public class StringMultiplication {
 	}
 
 	private static String multiply(String num1, String num2) {
-		int[] d = new int[num1.length() + num2.length()];
-		num1 = new StringBuffer(num1).reverse().toString();
-		num2 = new StringBuffer(num2).reverse().toString();
-		for (int i = 0; i < num1.length(); i++) {
-			for (int j = 0; j < num2.length(); j++) {
-				d[i + j] = (num1.charAt(i) - '0') * (num2.charAt(j) - '0');
+		if (num1.equals("0") || num2.equals("0")) {
+			return "0";
+		}
+		char[] ch1 = num1.toCharArray();
+		char[] ch2 = num2.toCharArray();
+		int l1 = num1.length(), l2 = num2.length();
+		int[] res = new int[l1 + l2];
+		for (int i = l2 - 1; i >= 0; i--) {
+			for (int j = l1 - 1; j >= 0; j--) {
+				int product = (ch1[j] - '0') * (ch2[i] - '0');
+				int current = product + res[i + j + 1];
+				res[i + j + 1] = current % 10;
+				res[i + j] += current / 10;
 			}
 		}
-		StringBuilder sb = new StringBuilder();
-		int carry, mod;
-		for (int i = 0; i < d.length; i++) {
-			mod = d[i] % 10;
-			carry = d[i] / 10;
-			if (i + 1 < d.length) {
-				d[i + 1] += carry;
-			}
-			sb.insert(0, mod);
+		int index = 0;
+		while (index < res.length && res[index] == 0) {
+			++index;
 		}
 
-		while (sb.charAt(0) == '0' && sb.length() > 0) {
-			sb.deleteCharAt(0);
+		if (index == res.length) {
+			return "0";
 		}
 
-		return sb.toString();
+		String result = "";
+		for (; index < res.length; index++) {
+			result += String.valueOf(res[index]);
+		}
+		return result;
 	}
 }
