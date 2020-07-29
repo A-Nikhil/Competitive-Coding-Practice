@@ -4,7 +4,7 @@ import Commons.ListNode;
 
 public class EvenAndOddNodes {
 	public static void main(String[] args) {
-		ListNode<Integer> llist = new ListNode<>();
+		ListNode llist = new ListNode();
 		llist.push(11);
 		llist.push(10);
 		llist.push(9);
@@ -19,12 +19,12 @@ public class EvenAndOddNodes {
 		llist.printList(segregate(llist.head));
 	}
 
-	private static ListNode<Integer> segregate(ListNode<Integer> head) {
-		ListNode<Integer> oddStart = null, oddEnd = null;
-		ListNode<Integer> evenStart = null, evenEnd = null, temp;
+	private static ListNode segregate(ListNode head) {
+		ListNode oddStart = null, oddEnd = null;
+		ListNode evenStart = null, evenEnd = null, temp;
 		while (head != null) {
-			temp = new ListNode<>(head.data);
-			if (head.data % 2 == 0) {
+			temp = new ListNode(head.val);
+			if (head.val % 2 == 0) {
 				if (evenStart == null) {
 					evenStart = temp;
 				} else {

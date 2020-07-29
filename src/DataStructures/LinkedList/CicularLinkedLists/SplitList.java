@@ -5,7 +5,7 @@ import Commons.ListNode;
 @SuppressWarnings("Duplicates")
 public class SplitList {
 	public static void main(String[] args) {
-		ListNode<Integer> list = new ListNode<>();
+		ListNode list = new ListNode();
 		list.push(1);
 		list.push(2);
 		list.push(3);
@@ -17,8 +17,8 @@ public class SplitList {
 		split(list.head);
 	}
 
-	private static void split(ListNode<Integer> head) {
-		ListNode<Integer> slow = head, fast = head, head1, head2 = null;
+	private static void split(ListNode head) {
+		ListNode slow = head, fast = head, head1, head2 = null;
 		while (fast.next != head && fast.next.next != head) {
 			slow = slow.next;
 			fast = fast.next.next;
@@ -39,9 +39,9 @@ public class SplitList {
 		slow.next = head;
 
 
-		new ListNode<Integer>().printCircularList(head1);
+		new ListNode().printCircularList(head1);
 		if (head2 != null) {
-			new ListNode<Integer>().printCircularList(head2);
+			new ListNode().printCircularList(head2);
 		}
 	}
 }

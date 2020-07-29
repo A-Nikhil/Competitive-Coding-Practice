@@ -5,7 +5,7 @@ import Commons.ListNode;
 @SuppressWarnings("Duplicates")
 public class InsertIntoSortedCircularList {
 	public static void main(String[] args) {
-		ListNode<Integer> list = new ListNode<>();
+		ListNode list = new ListNode();
 		list.push(6);
 		list.push(5);
 		list.push(4);
@@ -20,25 +20,25 @@ public class InsertIntoSortedCircularList {
 		list.printCircularList();
 	}
 
-	private static ListNode<Integer> insert(ListNode<Integer> head, int element) {
-		ListNode<Integer> end, node = head, prev = null;
+	private static ListNode insert(ListNode head, int element) {
+		ListNode end, node = head, prev = null;
 		while (node.next != head) {
 			node = node.next;
 		}
 		end = node;
 
-		ListNode<Integer> elementNode = new ListNode<>(element);
+		ListNode elementNode = new ListNode(element);
 
-		if (element < head.data) { // element is smaller than head
+		if (element < head.val) { // element is smaller than head
 			elementNode.next = head;
 			end.next = head = elementNode;
-		} else if (element > end.data) { // element is greater than the last node
+		} else if (element > end.val) { // element is greater than the last node
 			end.next = elementNode;
 			elementNode.next = head;
 		} else {
 			node = head;
 			while (node.next != head) {
-				if (element <= node.data) {
+				if (element <= node.val) {
 					elementNode.next = node;
 					prev.next = elementNode;
 					break;

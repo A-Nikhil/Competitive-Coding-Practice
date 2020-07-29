@@ -5,8 +5,8 @@ import Commons.ListNode;
 
 public class ReverseList2 {
 	public static void main(String[] args) {
-		ListNode<Integer> head;
-		ListNode<Integer> list = new ListNode<>();
+		ListNode head;
+		ListNode list = new ListNode();
 
 		// Making List from LeetCode Input
 		String x = "1->2->3->4->5->NULL";
@@ -21,7 +21,7 @@ public class ReverseList2 {
 		list.printList(reverse(head, m, n));
 	}
 
-	private static ListNode<Integer> reverse(ListNode<Integer> head, int m, int n) {
+	private static ListNode reverse(ListNode head, int m, int n) {
 		if (head == null) {
 			return null;
 		}
@@ -30,15 +30,15 @@ public class ReverseList2 {
 			return head;
 		}
 		int index = 1;
-		ListNode<Integer> temp = head;
-		ListNode<Integer> auxillary = null, auxEnd = null;
-		ListNode<Integer> start = null;
-		ListNode<Integer> newNode;
+		ListNode temp = head;
+		ListNode auxillary = null, auxEnd = null;
+		ListNode start = null;
+		ListNode newNode;
 		while (temp != null) {
 			if (index < m) {
 				start = temp;
 			} else if (index >= m && index <= n) {
-				newNode = new ListNode<>(temp.data);
+				newNode = new ListNode(temp.val);
 				if (auxillary == null) {
 					auxEnd = newNode;
 				}

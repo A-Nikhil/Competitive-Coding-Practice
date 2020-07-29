@@ -1,12 +1,12 @@
 package Commons;
 
-public class ListNode<T> {
-	public T data;
-	public ListNode<T> next;
-	public ListNode<T> head = null;
+public class ListNode {
+	public int val;
+	public ListNode next;
+	public ListNode head = null;
 
-	public ListNode(T data) {
-		this.data = data;
+	public ListNode(int val) {
+		this.val = val;
 		this.next = null;
 	}
 
@@ -14,29 +14,29 @@ public class ListNode<T> {
 		this.head = null;
 	}
 
-	public void push(T data) {
-		ListNode<T> newNode = new ListNode<>(data);
+	public void push(int data) {
+		ListNode newNode = new ListNode(data);
 		newNode.next = head;
 		this.head = newNode;
 	}
 
 	public void printList() {
-		ListNode<T> node = this.head;
+		ListNode node = this.head;
 		while (node != null) {
-			System.out.print(node.data + " ");
+			System.out.print(node.val + " ");
 			node = node.next;
 		}
 	}
 
-	public void printList(ListNode<T> head) {
+	public void printList(ListNode head) {
 		while (head != null) {
-			System.out.print(head.data + " ");
+			System.out.print(head.val + " ");
 			head = head.next;
 		}
 	}
 
 	public void convertCircular() {
-		ListNode<T> node = this.head;
+		ListNode node = this.head;
 		while (node.next != null) {
 			node = node.next;
 		}
@@ -44,21 +44,21 @@ public class ListNode<T> {
 	}
 
 	public void printCircularList() {
-		ListNode<T> node = this.head;
+		ListNode node = this.head;
 		while (this.head.next != node) {
-			System.out.print(this.head.data + " ");
+			System.out.print(this.head.val + " ");
 			this.head = this.head.next;
 		}
-		System.out.println(this.head.data);
+		System.out.println(this.head.val);
 		this.head = node;
 	}
 
-	public void printCircularList(ListNode<T> head) {
-		ListNode<T> node = head;
+	public void printCircularList(ListNode head) {
+		ListNode node = head;
 		while (head.next != node) {
-			System.out.print(head.data + " ");
+			System.out.print(head.val + " ");
 			head = head.next;
 		}
-		System.out.println(head.data);
+		System.out.println(head.val);
 	}
 }

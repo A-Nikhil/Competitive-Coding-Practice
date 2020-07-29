@@ -5,7 +5,7 @@ import Commons.ListNode;
 @SuppressWarnings("Duplicates")
 public class ReverseALinkedList {
 	public static void main(String[] args) {
-		ListNode<Integer> list1 = new ListNode<>();
+		ListNode list1 = new ListNode();
 		list1.push(6);
 		list1.push(5);
 		list1.push(4);
@@ -16,8 +16,8 @@ public class ReverseALinkedList {
 		list1.printList(reversal(list1.head));
 	}
 
-	private static ListNode<Integer> reversal(ListNode<Integer> head) {
-		ListNode<Integer> curr = head, prev = null, next;
+	private static ListNode reversal(ListNode head) {
+		ListNode curr = head, prev = null, next;
 		while (curr != null) {
 			next = curr.next;
 			curr.next = prev;

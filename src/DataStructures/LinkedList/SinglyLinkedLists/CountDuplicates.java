@@ -4,7 +4,7 @@ import Commons.ListNode;
 
 public class CountDuplicates {
 	public static void main(String[] args) {
-		ListNode<Integer> llist = new ListNode<>();
+		ListNode llist = new ListNode();
 		llist.push(1);
 		llist.push(2);
 		llist.push(1);
@@ -15,10 +15,10 @@ public class CountDuplicates {
 		System.out.println(countDuplicates(llist.head, 1));
 	}
 
-	private static int countDuplicates(ListNode<Integer> head, int key) {
+	private static int countDuplicates(ListNode head, int key) {
 		int count = 0;
 		while (head != null) {
-			if (head.data == key) {
+			if (head.val == key) {
 				count++;
 			}
 			head = head.next;

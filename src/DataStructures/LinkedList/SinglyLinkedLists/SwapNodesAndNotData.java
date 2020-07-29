@@ -5,7 +5,7 @@ import Commons.ListNode;
 @SuppressWarnings("Duplicates")
 public class SwapNodesAndNotData {
 	public static void main(String[] args) {
-		ListNode<Integer> list = new ListNode<>();
+		ListNode list = new ListNode();
 		list.push(1);
 		list.push(2);
 		list.push(3);
@@ -24,19 +24,19 @@ public class SwapNodesAndNotData {
 
 	}
 
-	private static void swapNodes(ListNode<Integer> head, int A, int B) {
+	private static void swapNodes(ListNode head, int A, int B) {
 		if (A == B) {
 			return;
 		}
-		ListNode<Integer> prevX, currX = head, prevY, currY = head;
-		ListNode<Integer> temp;
+		ListNode prevX, currX = head, prevY, currY = head;
+		ListNode temp;
 		prevX = prevY = null;
-		while (currX != null && currX.data != A) {
+		while (currX != null && currX.val != A) {
 			prevX = currX;
 			currX = currX.next;
 		}
 
-		while (currY != null && currY.data != B) {
+		while (currY != null && currY.val != B) {
 			prevY = currY;
 			currY = currY.next;
 		}

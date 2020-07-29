@@ -5,7 +5,7 @@ import Commons.ListNode;
 @SuppressWarnings("Duplicates")
 public class PairwiseSwap {
 	public static void main(String[] args) {
-		ListNode<Integer> list = new ListNode<>();
+		ListNode list = new ListNode();
 		list.push(5);
 		list.push(4);
 		list.push(3);
@@ -22,12 +22,12 @@ public class PairwiseSwap {
 		list.printList();
 	}
 
-	private static void pairwiseSwap(ListNode<Integer> head) {
+	private static void pairwiseSwap(ListNode head) {
 		int k;
 		while (head != null && head.next != null) {
-			k = head.next.data;
-			head.next.data = head.data;
-			head.data = k;
+			k = head.next.val;
+			head.next.val = head.val;
+			head.val = k;
 			head = head.next.next;
 		}
 	}

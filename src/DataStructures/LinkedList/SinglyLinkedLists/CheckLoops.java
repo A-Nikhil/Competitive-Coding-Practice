@@ -7,7 +7,7 @@ import java.util.ArrayList;
 @SuppressWarnings("Duplicates")
 public class CheckLoops {
 	public static void main(String[] args) {
-		ListNode<Integer> list = new ListNode<>();
+		ListNode list = new ListNode();
 		list.push(1);
 		list.push(2);
 		list.push(3);
@@ -19,8 +19,8 @@ public class CheckLoops {
 
 	}
 
-	private static boolean checkWithNodes(ListNode<Integer> head) {
-		ArrayList<ListNode<Integer>> list = new ArrayList<>();
+	private static boolean checkWithNodes(ListNode head) {
+		ArrayList<ListNode> list = new ArrayList<>();
 		list.add(head);
 		head = head.next;
 		while (head != null) {
@@ -34,8 +34,8 @@ public class CheckLoops {
 		return false;
 	}
 
-	private static boolean floydCycleFinding(ListNode<Integer> head) {
-		ListNode<Integer> slow = head, fast = head;
+	private static boolean floydCycleFinding(ListNode head) {
+		ListNode slow = head, fast = head;
 		while (slow != null && fast != null && fast.next != null) {
 			slow = slow.next;
 			fast = fast.next.next;

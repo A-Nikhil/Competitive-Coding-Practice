@@ -11,9 +11,9 @@ public class Josephus {
 	}
 
 	private static void josephus(int n, int m) {
-		ListNode<Integer> head = new ListNode<>(1), node, lastPtr = head;
+		ListNode head = new ListNode(1), node, lastPtr = head;
 		for (int i = 2; i <= n; i++) {
-			ListNode<Integer> element = new ListNode<>(i);
+			ListNode element = new ListNode(i);
 			lastPtr.next = element;
 			lastPtr = element;
 		}
@@ -31,6 +31,6 @@ public class Josephus {
 			node = node.next;
 		}
 
-		System.out.println("Person Alive => " + node.data);
+		System.out.println("Person Alive => " + node.val);
 	}
 }

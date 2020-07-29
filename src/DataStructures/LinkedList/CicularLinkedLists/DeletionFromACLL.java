@@ -5,7 +5,7 @@ import Commons.ListNode;
 @SuppressWarnings("Duplicates")
 public class DeletionFromACLL {
 	public static void main(String[] args) {
-		ListNode<Integer> list = new ListNode<>();
+		ListNode list = new ListNode();
 		list.push(1);
 		list.push(2);
 		list.push(3);
@@ -23,8 +23,8 @@ public class DeletionFromACLL {
 
 	}
 
-	private static void delete(ListNode<Integer> head, int element) {
-		ListNode<Integer> node = head, end, prev = head;
+	private static void delete(ListNode head, int element) {
+		ListNode node = head, end, prev = head;
 		while (node != null && node.next != head) {
 			prev = node;
 			node = node.next;
@@ -32,12 +32,12 @@ public class DeletionFromACLL {
 		end = node;
 
 		// Last Node
-		if (end.data == element) {
+		if (end.val == element) {
 			prev.next = head;
 		}
 
 		// First node
-		else if (head.data == element) {
+		else if (head.val == element) {
 			end.next = head.next;
 			head = head.next;
 		}
@@ -46,7 +46,7 @@ public class DeletionFromACLL {
 		else {
 			node = prev = head;
 			while (node.next != head) {
-				if (node.data == element) {
+				if (node.val == element) {
 					prev.next = node.next;
 					break;
 				}

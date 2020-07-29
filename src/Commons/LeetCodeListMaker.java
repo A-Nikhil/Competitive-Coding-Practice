@@ -3,17 +3,17 @@
 package Commons;
 
 public class LeetCodeListMaker {
-    ListNode<Integer> head;
+    ListNode head;
 
     public LeetCodeListMaker() {
         this.head = null;
     }
 
-    public ListNode<Integer> makeList(String x) {
-        ListNode<Integer> temp = null, newNode;
+    public ListNode makeList(String x) {
+        ListNode temp = null, newNode;
         String[] elems = x.split("->");
         for (int i = 0; i < elems.length - 1; i++) {
-            newNode = new ListNode<>(Integer.parseInt(elems[i]));
+            newNode = new ListNode(Integer.parseInt(elems[i]));
             if (this.head == null) {
                 head = newNode;
             } else {
@@ -25,10 +25,10 @@ public class LeetCodeListMaker {
         return this.head;
     }
 
-    public ListNode<Integer> makeList(int[] arr) {
-        ListNode<Integer> temp = null, newNode;
+    public ListNode makeList(int[] arr) {
+        ListNode temp = null, newNode;
         for (int i = 0; i < arr.length; i++) {
-            newNode = new ListNode<>(arr[i]);
+            newNode = new ListNode(arr[i]);
             if (this.head == null) {
                 head = newNode;
             } else {

@@ -8,10 +8,10 @@ import java.util.ArrayList;
 import java.util.Stack;
 
 public class NextGreaterNode {
-    private static int[] nextLargerNodes(ListNode<Integer> head) {
+    private static int[] nextLargerNodes(ListNode head) {
         ArrayList<Integer> A = new ArrayList<>();
-        for (ListNode<Integer> node = head; node != null; node = node.next)
-            A.add(node.data);
+        for (ListNode node = head; node != null; node = node.next)
+            A.add(node.val);
         int[] res = new int[A.size()];
         Stack<Integer> stack = new Stack<>();
         for (int i = 0; i < A.size(); ++i) {
@@ -25,7 +25,7 @@ public class NextGreaterNode {
     public static void main(String[] args) {
 //        int[] arr = {2, 7, 4, 3, 5};
         int[] arr = {1, 7, 5, 1, 9, 2, 5, 1};
-        ListNode<Integer> head = new LeetCodeListMaker().makeList(arr);
+        ListNode head = new LeetCodeListMaker().makeList(arr);
         new ArrayPrinter().printArray(nextLargerNodes(head));
     }
 }

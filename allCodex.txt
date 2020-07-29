@@ -2302,24 +2302,24 @@ package Algorithms.Sorting;
 import Commons.ListNode;
 
 public class MergeSortLinkedList {
-	private static ListNode<Integer> mergeSort(ListNode<Integer> head) {
+	private static ListNode mergeSort(ListNode head) {
 		if (head == null || head.next == null) {
 			return head;
 		}
-		ListNode<Integer> middle = getMiddle(head);
-		ListNode<Integer> nextMiddle = middle.next;
+		ListNode middle = getMiddle(head);
+		ListNode nextMiddle = middle.next;
 		middle.next = null;
-		ListNode<Integer> left = mergeSort(head);
-		ListNode<Integer> right = mergeSort(nextMiddle);
+		ListNode left = mergeSort(head);
+		ListNode right = mergeSort(nextMiddle);
 
 		return sortedMerge(left, right);
 	}
 
-	private static ListNode<Integer> getMiddle(ListNode<Integer> head) {
+	private static ListNode getMiddle(ListNode head) {
 		if (head == null) {
 			return head;
 		}
-		ListNode<Integer> slow = head, fast = head;
+		ListNode slow = head, fast = head;
 		while (fast != null && fast.next != null) {
 			slow = slow.next;
 			fast = fast.next.next;
@@ -2327,8 +2327,8 @@ public class MergeSortLinkedList {
 		return slow;
 	}
 
-	private static ListNode<Integer> sortedMerge(ListNode<Integer> left, ListNode<Integer> right) {
-		ListNode<Integer> result;
+	private static ListNode sortedMerge(ListNode left, ListNode right) {
+		ListNode result;
 		if (left == null) {
 			return right;
 		}
@@ -2346,7 +2346,7 @@ public class MergeSortLinkedList {
 	}
 
 	public static void main(String[] args) {
-		ListNode<Integer> li = new ListNode<>();
+		ListNode li = new ListNode();
 		li.push(15);
 		li.push(10);
 		li.push(5);
@@ -2796,7 +2796,7 @@ public class ListNode<T> {
 	}
 
 	public void push(T data) {
-		ListNode<T> newNode = new ListNode<>(data);
+		ListNode<T> newNode = new ListNode(data);
 		newNode.next = head;
 		this.head = newNode;
 	}
@@ -11267,7 +11267,7 @@ import Commons.ListNode;
 @SuppressWarnings("Duplicates")
 public class DeletionFromACLL {
 	public static void main(String[] args) {
-		ListNode<Integer> list = new ListNode<>();
+		ListNode list = new ListNode();
 		list.push(1);
 		list.push(2);
 		list.push(3);
@@ -11285,8 +11285,8 @@ public class DeletionFromACLL {
 
 	}
 
-	private static void delete(ListNode<Integer> head, int element) {
-		ListNode<Integer> node = head, end, prev = head;
+	private static void delete(ListNode head, int element) {
+		ListNode node = head, end, prev = head;
 		while (node != null && node.next != head) {
 			prev = node;
 			node = node.next;
@@ -11333,7 +11333,7 @@ import Commons.ListNode;
 @SuppressWarnings("Duplicates")
 public class InsertIntoSortedCircularList {
 	public static void main(String[] args) {
-		ListNode<Integer> list = new ListNode<>();
+		ListNode list = new ListNode();
 		list.push(6);
 		list.push(5);
 		list.push(4);
@@ -11348,14 +11348,14 @@ public class InsertIntoSortedCircularList {
 		list.printCircularList();
 	}
 
-	private static ListNode<Integer> insert(ListNode<Integer> head, int element) {
-		ListNode<Integer> end, node = head, prev = null;
+	private static ListNode insert(ListNode head, int element) {
+		ListNode end, node = head, prev = null;
 		while (node.next != head) {
 			node = node.next;
 		}
 		end = node;
 
-		ListNode<Integer> elementNode = new ListNode<>(element);
+		ListNode elementNode = new ListNode(element);
 
 		if (element < head.data) { // element is smaller than head
 			elementNode.next = head;
@@ -11400,9 +11400,9 @@ public class Josephus {
 	}
 
 	private static void josephus(int n, int m) {
-		ListNode<Integer> head = new ListNode<>(1), node, lastPtr = head;
+		ListNode head = new ListNode(1), node, lastPtr = head;
 		for (int i = 2; i <= n; i++) {
-			ListNode<Integer> element = new ListNode<>(i);
+			ListNode element = new ListNode(i);
 			lastPtr.next = element;
 			lastPtr = element;
 		}
@@ -11438,7 +11438,7 @@ import Commons.ListNode;
 @SuppressWarnings("Duplicates")
 public class SplitList {
 	public static void main(String[] args) {
-		ListNode<Integer> list = new ListNode<>();
+		ListNode list = new ListNode();
 		list.push(1);
 		list.push(2);
 		list.push(3);
@@ -11450,8 +11450,8 @@ public class SplitList {
 		split(list.head);
 	}
 
-	private static void split(ListNode<Integer> head) {
-		ListNode<Integer> slow = head, fast = head, head1, head2 = null;
+	private static void split(ListNode head) {
+		ListNode slow = head, fast = head, head1, head2 = null;
 		while (fast.next != head && fast.next.next != head) {
 			slow = slow.next;
 			fast = fast.next.next;
@@ -11472,9 +11472,9 @@ public class SplitList {
 		slow.next = head;
 
 
-		new ListNode<Integer>().printCircularList(head1);
+		new ListNode().printCircularList(head1);
 		if (head2 != null) {
-			new ListNode<Integer>().printCircularList(head2);
+			new ListNode().printCircularList(head2);
 		}
 	}
 }
@@ -11495,7 +11495,7 @@ import java.util.ArrayList;
 @SuppressWarnings("Duplicates")
 public class CheckLoops {
 	public static void main(String[] args) {
-		ListNode<Integer> list = new ListNode<>();
+		ListNode list = new ListNode();
 		list.push(1);
 		list.push(2);
 		list.push(3);
@@ -11507,8 +11507,8 @@ public class CheckLoops {
 
 	}
 
-	private static boolean checkWithNodes(ListNode<Integer> head) {
-		ArrayList<ListNode<Integer>> list = new ArrayList<>();
+	private static boolean checkWithNodes(ListNode head) {
+		ArrayList<ListNode> list = new ArrayList<>();
 		list.add(head);
 		head = head.next;
 		while (head != null) {
@@ -11522,8 +11522,8 @@ public class CheckLoops {
 		return false;
 	}
 
-	private static boolean floydCycleFinding(ListNode<Integer> head) {
-		ListNode<Integer> slow = head, fast = head;
+	private static boolean floydCycleFinding(ListNode head) {
+		ListNode slow = head, fast = head;
 		while (slow != null && fast != null && fast.next != null) {
 			slow = slow.next;
 			fast = fast.next.next;
@@ -11548,7 +11548,7 @@ import Commons.ListNode;
 
 public class CountDuplicates {
 	public static void main(String[] args) {
-		ListNode<Integer> llist = new ListNode<>();
+		ListNode llist = new ListNode();
 		llist.push(1);
 		llist.push(2);
 		llist.push(1);
@@ -11559,7 +11559,7 @@ public class CountDuplicates {
 		System.out.println(countDuplicates(llist.head, 1));
 	}
 
-	private static int countDuplicates(ListNode<Integer> head, int key) {
+	private static int countDuplicates(ListNode head, int key) {
 		int count = 0;
 		while (head != null) {
 			if (head.data == key) {
@@ -11584,7 +11584,7 @@ import Commons.ListNode;
 
 public class EvenAndOddNodes {
 	public static void main(String[] args) {
-		ListNode<Integer> llist = new ListNode<>();
+		ListNode llist = new ListNode();
 		llist.push(11);
 		llist.push(10);
 		llist.push(9);
@@ -11599,11 +11599,11 @@ public class EvenAndOddNodes {
 		llist.printList(segregate(llist.head));
 	}
 
-	private static ListNode<Integer> segregate(ListNode<Integer> head) {
-		ListNode<Integer> oddStart = null, oddEnd = null;
-		ListNode<Integer> evenStart = null, evenEnd = null, temp;
+	private static ListNode segregate(ListNode head) {
+		ListNode oddStart = null, oddEnd = null;
+		ListNode evenStart = null, evenEnd = null, temp;
 		while (head != null) {
-			temp = new ListNode<>(head.data);
+			temp = new ListNode(head.data);
 			if (head.data % 2 == 0) {
 				if (evenStart == null) {
 					evenStart = temp;
@@ -11643,7 +11643,7 @@ import Commons.ListNode;
 
 public class IntersectionOfLists {
 	public static void main(String[] args) {
-		ListNode<Integer> list1 = new ListNode<>();
+		ListNode list1 = new ListNode();
 		list1.push(6);
 		list1.push(5);
 		list1.push(4);
@@ -11651,21 +11651,21 @@ public class IntersectionOfLists {
 		list1.push(2);
 		list1.push(1);
 
-		ListNode<Integer> list2 = new ListNode<>();
+		ListNode list2 = new ListNode();
 		list2.push(8);
 		list2.push(6);
 		list2.push(4);
 		list2.push(2);
 
-		new ListNode<Integer>().printList(intersect(list1.head, list2.head));
+		new ListNode().printList(intersect(list1.head, list2.head));
 	}
 
-	private static ListNode<Integer> intersect(ListNode<Integer> a, ListNode<Integer> b) {
-		ListNode<Integer> start = null, end = null, temp;
+	private static ListNode intersect(ListNode a, ListNode b) {
+		ListNode start = null, end = null, temp;
 		while (a != null && b != null) {
 			if (a.data == b.data) {
 				// First result node
-				temp = new ListNode<>(a.data);
+				temp = new ListNode(a.data);
 				if (start == null) {
 					start = temp;
 				} else {
@@ -11698,22 +11698,22 @@ import Commons.ListNode;
 @SuppressWarnings("Duplicates")
 public class MiddleOfTheList {
 	public static void main(String[] args) {
-		ListNode<Integer> list = new ListNode<>();
+		ListNode list = new ListNode();
 		list.push(1);
 		list.push(2);
 		list.push(3);
 		list.push(4);
 		list.push(5);
 		list.push(6);
-		ListNode<Integer> head = list.head;
+		ListNode head = list.head;
 		System.out.println(findMiddle(head));
 	}
 
-	private static int findMiddle(ListNode<Integer> head) {
+	private static int findMiddle(ListNode head) {
 		if (head == null) {
 			return -1;
 		}
-		ListNode<Integer> slow = head, fast = head;
+		ListNode slow = head, fast = head;
 		while (slow != null && fast != null && fast.next != null) {
 			slow = slow.next;
 			fast = fast.next.next;
@@ -11737,7 +11737,7 @@ import Commons.ListNode;
 @SuppressWarnings("Duplicates")
 public class PairwiseSwap {
 	public static void main(String[] args) {
-		ListNode<Integer> list = new ListNode<>();
+		ListNode list = new ListNode();
 		list.push(5);
 		list.push(4);
 		list.push(3);
@@ -11754,7 +11754,7 @@ public class PairwiseSwap {
 		list.printList();
 	}
 
-	private static void pairwiseSwap(ListNode<Integer> head) {
+	private static void pairwiseSwap(ListNode head) {
 		int k;
 		while (head != null && head.next != null) {
 			k = head.next.data;
@@ -11781,14 +11781,14 @@ import java.util.Stack;
 @SuppressWarnings("Duplicates")
 public class PalindromeList {
 	public static void main(String[] args) {
-		ListNode<String> list = new ListNode<>();
+		ListNode<String> list = new ListNode();
 		list.push("R");
 		list.push("A");
 		list.push("D");
 		list.push("A");
 		list.push("R");
 
-		ListNode<String> list1 = new ListNode<>();
+		ListNode<String> list1 = new ListNode();
 		list1.push("R");
 		list1.push("A");
 		list1.push("D");
@@ -11831,7 +11831,7 @@ import Commons.ListNode;
 
 public class RemoveDuplicatesSorted {
 	public static void main(String[] args) {
-		ListNode<Integer> llist = new ListNode<>();
+		ListNode llist = new ListNode();
 		llist.push(20);
 		llist.push(13);
 		llist.push(13);
@@ -11848,7 +11848,7 @@ public class RemoveDuplicatesSorted {
 		llist.printList();
 	}
 
-	private static void removeDuplicates(ListNode<Integer> head) {
+	private static void removeDuplicates(ListNode head) {
 		while (head != null && head.next != null) {
 			if (head.data == head.next.data) {
 				head.next = head.next.next;
@@ -11875,7 +11875,7 @@ import java.util.ArrayList;
 public class RemoveDuplicatesUnsorted {
 	public static void main(String[] args) {
 		int[] arr = {10, 12, 11, 11, 12, 11, 10};
-		ListNode<Integer> llist = new ListNode<>();
+		ListNode llist = new ListNode();
 		for (int i : arr) {
 			llist.push(i);
 		}
@@ -11884,7 +11884,7 @@ public class RemoveDuplicatesUnsorted {
 		removeDuplicates(llist.head);
 	}
 
-	private static void removeDuplicates(ListNode<Integer> head) {
+	private static void removeDuplicates(ListNode head) {
 		ArrayList<Integer> list = new ArrayList<>();
 		while (head != null) {
 			if (!list.contains(head.data)) {
@@ -11914,7 +11914,7 @@ import Commons.ListNode;
 @SuppressWarnings("Duplicates")
 public class ReverseALinkedList {
 	public static void main(String[] args) {
-		ListNode<Integer> list1 = new ListNode<>();
+		ListNode list1 = new ListNode();
 		list1.push(6);
 		list1.push(5);
 		list1.push(4);
@@ -11925,8 +11925,8 @@ public class ReverseALinkedList {
 		list1.printList(reversal(list1.head));
 	}
 
-	private static ListNode<Integer> reversal(ListNode<Integer> head) {
-		ListNode<Integer> curr = head, prev = null, next;
+	private static ListNode reversal(ListNode head) {
+		ListNode curr = head, prev = null, next;
 		while (curr != null) {
 			next = curr.next;
 			curr.next = prev;
@@ -11952,7 +11952,7 @@ import Commons.ListNode;
 @SuppressWarnings("Duplicates")
 public class SwapNodesAndNotData {
 	public static void main(String[] args) {
-		ListNode<Integer> list = new ListNode<>();
+		ListNode list = new ListNode();
 		list.push(1);
 		list.push(2);
 		list.push(3);
@@ -11971,12 +11971,12 @@ public class SwapNodesAndNotData {
 
 	}
 
-	private static void swapNodes(ListNode<Integer> head, int A, int B) {
+	private static void swapNodes(ListNode head, int A, int B) {
 		if (A == B) {
 			return;
 		}
-		ListNode<Integer> prevX, currX = head, prevY, currY = head;
-		ListNode<Integer> temp;
+		ListNode prevX, currX = head, prevY, currY = head;
+		ListNode temp;
 		prevX = prevY = null;
 		while (currX != null && currX.data != A) {
 			prevX = currX;

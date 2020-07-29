@@ -3,24 +3,24 @@ package Algorithms.Sorting;
 import Commons.ListNode;
 
 public class MergeSortLinkedList {
-	private static ListNode<Integer> mergeSort(ListNode<Integer> head) {
+	private static ListNode mergeSort(ListNode head) {
 		if (head == null || head.next == null) {
 			return head;
 		}
-		ListNode<Integer> middle = getMiddle(head);
-		ListNode<Integer> nextMiddle = middle.next;
+		ListNode middle = getMiddle(head);
+		ListNode nextMiddle = middle.next;
 		middle.next = null;
-		ListNode<Integer> left = mergeSort(head);
-		ListNode<Integer> right = mergeSort(nextMiddle);
+		ListNode left = mergeSort(head);
+		ListNode right = mergeSort(nextMiddle);
 
 		return sortedMerge(left, right);
 	}
 
-	private static ListNode<Integer> getMiddle(ListNode<Integer> head) {
+	private static ListNode getMiddle(ListNode head) {
 		if (head == null) {
 			return head;
 		}
-		ListNode<Integer> slow = head, fast = head;
+		ListNode slow = head, fast = head;
 		while (fast != null && fast.next != null) {
 			slow = slow.next;
 			fast = fast.next.next;
@@ -28,15 +28,15 @@ public class MergeSortLinkedList {
 		return slow;
 	}
 
-	private static ListNode<Integer> sortedMerge(ListNode<Integer> left, ListNode<Integer> right) {
-		ListNode<Integer> result;
+	private static ListNode sortedMerge(ListNode left, ListNode right) {
+		ListNode result;
 		if (left == null) {
 			return right;
 		}
 		if (right == null) {
 			return left;
 		}
-		if (left.data <= right.data) {
+		if (left.val <= right.val) {
 			result = left;
 			result.next = sortedMerge(left.next, right);
 		} else {
@@ -47,7 +47,7 @@ public class MergeSortLinkedList {
 	}
 
 	public static void main(String[] args) {
-		ListNode<Integer> li = new ListNode<>();
+		ListNode li = new ListNode();
 		li.push(15);
 		li.push(10);
 		li.push(5);
