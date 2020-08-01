@@ -5,6 +5,23 @@ package DataStructures.BinaryTree.Traversals;
 import java.util.*;
 
 public class VerticalTraversalIterative {
+    
+    public static void main(String[] args) {
+        Commons.Node root = new Commons.Node(12);
+        root.left = new Commons.Node(10);
+        root.right = new Commons.Node(30);
+        root.right.left = new Commons.Node(25);
+        root.right.right = new Commons.Node(40);
+
+        List<List<Integer>> result = verticalTraversal(root);
+        for (List<Integer> lister : result) {
+            for (int x : lister) {
+                System.out.print(x + " ");
+            }
+            System.out.println();
+        }
+    }
+    
     private static List<List<Integer>> verticalTraversal(Commons.Node root) {
         List<List<Integer>> result = new ArrayList<>();
         if (root == null) {
