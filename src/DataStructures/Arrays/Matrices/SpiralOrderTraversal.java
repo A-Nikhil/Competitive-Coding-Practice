@@ -1,26 +1,31 @@
 package DataStructures.Arrays.Matrices;
 
 public class SpiralOrderTraversal {
-    private static void spiral(int n) {
-        int i = 0, j =0, index = 0;
-        int colRight = n-1, colLeft = 0, rowDown = n-1, rowUp = 1;
-        boolean travRowUp, travRowDown, travColLeft, travColRight = true;
-        travRowUp = travRowDown = travColLeft = false;
-        int[][] arr = new int[n][n];
-        while (index < n*n) {
-			System.out.println(i + " " + j);
-        	arr[i][j] = index;
-        	index++;
+	public static void main(String[] args) {
+		int n = 4;
+		spiral(n);
+	}
 
-        	if (travColRight) {
-        		if (j == colRight) {
-        			travRowDown = true;
-        			i++;
-        			travColRight = false;
-        			colRight--;
-        			continue;
+	private static void spiral(int n) {
+		int i = 0, j = 0, index = 0;
+		int colRight = n - 1, colLeft = 0, rowDown = n - 1, rowUp = 1;
+		boolean travRowUp, travRowDown, travColLeft, travColRight = true;
+		travRowUp = travRowDown = travColLeft = false;
+		int[][] arr = new int[n][n];
+		while (index < n * n) {
+			System.out.println(i + " " + j);
+			arr[i][j] = index;
+			index++;
+
+			if (travColRight) {
+				if (j == colRight) {
+					travRowDown = true;
+					i++;
+					travColRight = false;
+					colRight--;
+					continue;
 				} else {
-        			j++;
+					j++;
 				}
 			}
 
@@ -60,16 +65,11 @@ public class SpiralOrderTraversal {
 			}
 		}
 
-        for (int[] x : arr) {
-        	for (int z : x) {
-        		System.out.print(z + " ");
+		for (int[] x : arr) {
+			for (int z : x) {
+				System.out.print(z + " ");
 			}
 			System.out.println();
 		}
-    }
-
-	public static void main(String[] args) {
-		int n = 4;
-    	spiral(n);
 	}
 }

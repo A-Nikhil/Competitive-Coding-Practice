@@ -2,51 +2,51 @@
 
 package DataStructures.Arrays.Misc;
 
-import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class CombinationSum {
-    public List<List<Integer>> result;
+	public List<List<Integer>> result;
 
-    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        result = new ArrayList<>();
-        if (candidates.length == 0) {
-            return result;
-        }
-        Arrays.sort(candidates);
-        List<Integer> current = new ArrayList<>();
+	public static void main(String[] args) {
+		int[] candidates = {10, 1, 2, 7, 6, 1, 5};
+		int target = 8;
+		List<List<Integer>> result = new CombinationSum().combinationSum2(candidates, target);
+		System.out.println(result);
+	}
 
-        backtrack(candidates, target, 0, current);
+	public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+		result = new ArrayList<>();
+		if (candidates.length == 0) {
+			return result;
+		}
+		Arrays.sort(candidates);
+		List<Integer> current = new ArrayList<>();
 
-        return result;
-    }
+		backtrack(candidates, target, 0, current);
 
-    public void backtrack(int[] candidates, int target, int start, List<Integer> current) {
-        if (target < 0) {
-            return;
-        }
+		return result;
+	}
 
-        if (target == 0) {
-            result.add(new ArrayList<>(current));
-            return;
-        }
+	public void backtrack(int[] candidates, int target, int start, List<Integer> current) {
+		if (target < 0) {
+			return;
+		}
 
-        int prev = -1;
-        for (int i = start; i < candidates.length; i++) {
-            if (prev != candidates[i]) {
-                current.add(candidates[i]);
-                backtrack(candidates, target - candidates[i], i + 1, current);
-                current.remove(current.size() - 1);
-                prev = candidates[i];
-            }
-        }
-    }
+		if (target == 0) {
+			result.add(new ArrayList<>(current));
+			return;
+		}
 
-    public static void main(String[] args) {
-        int[] candidates = { 10, 1, 2, 7, 6, 1, 5 };
-        int target = 8;
-        List<List<Integer>> result = new CombinationSum().combinationSum2(candidates, target);
-        System.out.println(result);
-    }
+		int prev = -1;
+		for (int i = start; i < candidates.length; i++) {
+			if (prev != candidates[i]) {
+				current.add(candidates[i]);
+				backtrack(candidates, target - candidates[i], i + 1, current);
+				current.remove(current.size() - 1);
+				prev = candidates[i];
+			}
+		}
+	}
 }

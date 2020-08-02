@@ -2,11 +2,11 @@ package Algorithms.Sorting;
 
 import Commons.ArrayPrinter;
 
-import java.util.*;
+import java.util.Stack;
 
 public class IterativeQuickSort {
 	public static void main(String[] args) {
-		int[] arr = { 4, 3, 5, 2, 1, 3, 2, 3 };
+		int[] arr = {4, 3, 5, 2, 1, 3, 2, 3};
 		int n = 8;
 		quickSort(arr, 0, n - 1);
 	}

@@ -5,6 +5,11 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ThreeSum {
+	public static void main(String[] args) {
+		int[] nums = {-1, 0, 1, 2, -1, -4};
+		System.out.println(threeSums(nums));
+	}
+
 	private static List<List<Integer>> threeSums(int[] nums) {
 		Arrays.sort(nums);
 		List<List<Integer>> result = new ArrayList<>();
@@ -36,10 +41,5 @@ public class ThreeSum {
 			}
 		}
 		return result;
-	}
-
-	public static void main(String[] args) {
-		int[] nums = { -1, 0, 1, 2, -1, -4 };
-		System.out.println(threeSums(nums));
 	}
 }
