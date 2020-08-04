@@ -61,4 +61,13 @@ public class ListNode {
 		}
 		System.out.println(head.val);
 	}
+
+	public String toString(ListNode head) {
+		String x = "";
+		while (head != null) {
+			x = x.concat(head.val + " ");
+			head = head.next;
+		}
+		return x;
+	}
 }
