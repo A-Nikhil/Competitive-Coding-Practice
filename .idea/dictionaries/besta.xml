@@ -6,6 +6,7 @@
       <w>bitonic</w>
       <w>blocklist</w>
       <w>coeff</w>
+      <w>consec</w>
       <w>cooldown</w>
       <w>decodings</w>
       <w>delim</w>
@@ -20,6 +21,7 @@
       <w>postorder</w>
       <w>prims</w>
       <w>sright</w>
+      <w>strs</w>
       <w>subarrays</w>
       <w>succ</w>
       <w>warshall</w>
