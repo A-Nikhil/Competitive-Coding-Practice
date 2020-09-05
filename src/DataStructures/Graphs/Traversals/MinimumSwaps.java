@@ -4,12 +4,12 @@ Minimum Swaps to sort an array
 Given an array of integers. Find the minimum number of swaps required to sort the array in non-decreasing order.
 
 Input:
-The first line of input contains an integer T denoting the no of test cases.
-Then T test cases follow. Each test case contains an integer N denoting the no of element of the array A[ ].
+The first line of input contains an integer T denoting the no of Others.test cases.
+Then T Others.test cases follow. Each Others.test case contains an integer N denoting the no of element of the array A[ ].
 In the next line are N space separated values of the array A[ ] .
 
 Output:
-For each test case in a new line output will be an integer denoting minimum umber of swaps that are
+For each Others.test case in a new line output will be an integer denoting minimum umber of swaps that are
 required to sort the array.
  */
 

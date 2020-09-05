@@ -1,7 +1,7 @@
 /*
 Full Binary Tree
 
-To check whether a binary tree is a full binary tree we need to test the following cases:-
+To check whether a binary tree is a full binary tree we need to Others.test the following cases:-
 
 1) If a binary tree node is NULL then it is a full binary tree.
 2) If a binary tree node does have empty left and right sub-trees, then

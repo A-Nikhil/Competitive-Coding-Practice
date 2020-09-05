@@ -7,14 +7,14 @@ else print -1 if the destination is not reachable. You may move in only four dir
 ie up, down, left and right. The path can only be created out of a cell if its value is 1.
 
 Input:
-The first line of input contains an integer T denoting the no of test cases.
-Then T test cases follow. Each test case contains two lines .
-The first line of each test case contains two integers n and m denoting the size of the matrix.
+The first line of input contains an integer T denoting the no of Others.test cases.
+Then T Others.test cases follow. Each Others.test case contains two lines .
+The first line of each Others.test case contains two integers n and m denoting the size of the matrix.
 Then in the next line are n*m space separated values of the matrix.
 The following line after it contains two integers x and y denoting the index of the destination.
 
 Output:
-For each test case print in a new line the min no of steps needed to reach the destination.
+For each Others.test case print in a new line the min no of steps needed to reach the destination.
 
 Constraints:
 1<=T<=100
