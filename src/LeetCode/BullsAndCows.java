@@ -1,4 +1,4 @@
-package LeetCode.SeptemberChallenge;
+package LeetCode;
 
 public class BullsAndCows {
 	public static void main(String[] args) {
