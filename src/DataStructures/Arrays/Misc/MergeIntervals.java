@@ -3,5 +3,5 @@
 package DataStructures.Arrays.Misc;
 
 public class MergeIntervals {
-	
+
 }

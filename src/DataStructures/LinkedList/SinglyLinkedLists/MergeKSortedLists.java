@@ -29,7 +29,7 @@ public class MergeKSortedLists {
 			pos = -1;
 
 			// finding the smallest element
-			for (i = 0; i<lists.length; i++) {
+			for (i = 0; i < lists.length; i++) {
 				if (lists[i] == null) {
 					emptyCount++;
 					continue;

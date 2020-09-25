@@ -4,6 +4,10 @@ public class SurroundingRegions {
 	public int[] dx = {1, -1, 0, 0};
 	public int[] dy = {0, 0, 1, -1};
 
+	public static void main(String[] args) {
+
+	}
+
 	public void solve(char[][] board) {
 		int m = board.length;
 		if (m == 0) {
@@ -52,9 +56,5 @@ public class SurroundingRegions {
 
 	public boolean isValid(int x, int y, int m, int n) {
 		return ((x >= 0) && (y >= 0) && (x < m) && (y < n));
-	}
-
-	public static void main(String[] args) {
-
 	}
 }
