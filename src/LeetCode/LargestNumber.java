@@ -1,13 +1,11 @@
 package LeetCode;
 
-import DataStructures.Arrays.Misc.LargestTime;
-
 import java.util.Arrays;
 
 public class LargestNumber {
 	public static void main(String[] args) {
 		int[] nums = {10, 2};
-		System.out.println(new LargestTime().largestTimeFromDigits(nums));
+		System.out.println(new LargestNumber().largestNumber(nums));
 	}
 
 	public String largestNumber(int[] nums) {
