@@ -32,6 +32,22 @@ public class ValidSudoku {
 		return rows && cols;
 	}
 
+	public boolean checkGrids(char[][] board, int startRow, int startCol) {
+		set.clear();
+		for (int i = startRow; i < startRow + 3; i++) {
+			for (int j = startCol; j < startCol + 3; j++) {
+				if (board[i][j] != '.') {
+					if (set.contains(board[i][j])) {
+						return false;
+					} else {
+						set.add(board[i][j]);
+					}
+				}
+			}
+		}
+		return true;
+	}
+
 	public boolean checkRows(char[][] board) {
 		for (int i = 0; i < 9; i++) {
 			set.clear();
@@ -57,22 +73,6 @@ public class ValidSudoku {
 						return false;
 					} else {
 						set.add(board[j][i]);
-					}
-				}
-			}
-		}
-		return true;
-	}
-
-	public boolean checkGrids(char[][] board, int startRow, int startCol) {
-		set.clear();
-		for (int i = startRow; i < startRow + 3; i++) {
-			for (int j = startCol; j < startCol + 3; j++) {
-				if (board[i][j] != '.') {
-					if (set.contains(board[i][j])) {
-						return false;
-					} else {
-						set.add(board[i][j]);
 					}
 				}
 			}

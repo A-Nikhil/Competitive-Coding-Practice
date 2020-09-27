@@ -2,7 +2,7 @@ package Algorithms.Math;
 
 public class DayOfTheWeek {
 	// Driver Code
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		int day = 13, month = 7, year = 2017;
 		System.out.println(day_of_the_week(year, month, day));
 	}

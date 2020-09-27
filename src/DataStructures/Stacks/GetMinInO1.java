@@ -28,15 +28,15 @@ public class GetMinInO1 {
 		}
 	}
 
+	private static int getMin() {
+		return minElement;
+	}
+
 	private static int pop() {
 		int y = stack.pop();
 		if (y < minElement) {
 			minElement = 2 * minElement - y;
 		}
 		return y;
-	}
-
-	private static int getMin() {
-		return minElement;
 	}
 }

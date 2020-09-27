@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 public class SortingA2DArray {
 	public static void main(String[] args) {
-		int mat[][] = {
+		int[][] mat = {
 				{10, 20, 30, 40},
 				{15, 25, 35, 45},
 				{27, 29, 37, 48},
