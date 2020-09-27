@@ -11,6 +11,12 @@ public class ArrayPrinter {
 		}
 	}
 
+	public void printArray(double[] arr) {
+		for (double v : arr) {
+			System.out.print(v + " ");
+		}
+	}
+
 	public void printArray(int[] arr, int start, int end) {
 		for (int i = start; i < end; i++) {
 			System.out.print(arr[i] + " ");
@@ -18,8 +24,8 @@ public class ArrayPrinter {
 	}
 
 	public void printArray(String[] arr) {
-		for (int i = 0; i < arr.length; i++) {
-			System.out.print(arr[i] + " ");
+		for (String s : arr) {
+			System.out.print(s + " ");
 		}
 	}
 
