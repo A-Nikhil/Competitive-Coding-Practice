@@ -4,7 +4,7 @@ This repository contains code examples of my preparation for the Placements seas
 I will be updating it continuously as I practice, so stay tuned.
 
 ### Places where you can practice competitive coding  
-1. For studying for an interview or a Others.test  
+1. For studying for an interview or an online assessment.  
     1. [GeeksForGeeks](https://www.geeksforgeeks.org/)  
         1. [Algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
         2. [Data Structures](https://www.geeksforgeeks.org/data-structures/)
@@ -402,17 +402,30 @@ I will be updating it continuously as I practice, so stay tuned.
 ----| Basics
 --------| AbstractClasses.java
 --------| ObjectSwapping.java
+----| Inheritance
+--------| ObjectCreation.java
+--------| UsingInterfaces.java
 ----| Sets
 --------| TreeSetDemo.java
 | LeetCode
 ----| BestTimeToBuyAndSellStock1.java
 ----| BullsAndCows.java
+----| CarPooling.java
 ----| CombinationSum3.java
+----| EvaluatedDivision.java
 ----| FindAndReplaceInString.java
 ----| HouseRobber.java
 ----| HouseRobber2.java
 ----| InsertInterval.java
+----| LargestNumber.java
 ----| LongestMountainInArray.java
+----| MajorityElement2.java
 ----| MaxXOR.java
+----| OddEvenLinkedList.java
+----| ProductOfArrayExceptSelf.java
 ----| SequentialDigits.java
+----| SummaryRanges.java
+----| SuperUglyNumber.java
+----| TeemoAttacking.java
+----| UniquePaths3.java
 ```
